@@ -3,12 +3,12 @@
         "https://cal1.piapi.ggtyler.dev",
         "https://pipedapi.leptons.xyz",
         "https://nyc1.piapi.ggtyler.dev",
-        "https://pipedapi.ducks.party",
         "https://pipedapi.orangenet.cc",
         "https://pol1.piapi.ggtyler.dev",
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.adminforge.de",
         "https://api.piped.private.coffee",
         "https://pipedapi.reallyaweso.me",
-        "https://pipedapi.adminforge.de",
         "https://piapi.ggtyler.dev",
         "https://api.piped.yt",
         "https://pipedapi.nosebs.ru"
@@ -17,6 +17,6 @@
     "invidious": [
         "https://inv.stealthy.club"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com",
+    "hyperpipe": "https://hyperpipeapi.darkness.services",
     "status": 0
 }

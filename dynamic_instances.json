@@ -1,14 +1,15 @@
 {
     "piped": [
-        "https://piapi.ggtyler.dev",
-        "https://cal1.piapi.ggtyler.dev",
-        "https://nyc1.piapi.ggtyler.dev",
         "https://pipedapi.drgns.space",
         "https://pipedapi.nosebs.ru",
-        "https://pol1.piapi.ggtyler.dev",
-        "https://pipedapi.adminforge.de",
         "https://pipedapi.ducks.party",
-        "https://api.piped.private.coffee"
+        "https://cal1.piapi.ggtyler.dev",
+        "https://pipedapi.adminforge.de",
+        "https://nyc1.piapi.ggtyler.dev",
+        "https://piapi.ggtyler.dev",
+        "https://api.piped.private.coffee",
+        "https://pol1.piapi.ggtyler.dev",
+        "https://pipedapi.orangenet.cc"
     ],
     "hls": [],
     "invidious": [

@@ -1,17 +1,17 @@
 {
     "piped": [
-        "https://pipedapi.ducks.party",
         "https://nyc1.piapi.ggtyler.dev",
         "https://pipedapi.drgns.space",
         "https://piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev",
         "https://pipedapi.adminforge.de",
+        "https://pipedapi.ducks.party",
         "https://api.piped.private.coffee"
     ],
     "hls": [],
     "invidious": [
-        "https://invidious.reallyaweso.me"
+        "https://invidious.nikkosphere.com"
     ],
-    "hyperpipe": "https://hyperpipeapi.darkness.services",
+    "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": -1
 }

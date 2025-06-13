@@ -3,15 +3,15 @@
         "https://pipedapi.drgns.space",
         "https://pipedapi.adminforge.de",
         "https://pipedapi.ducks.party",
-        "https://nyc1.piapi.ggtyler.dev",
-        "https://api.piped.private.coffee",
+        "https://pol1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
-        "https://pol1.piapi.ggtyler.dev"
+        "https://nyc1.piapi.ggtyler.dev",
+        "https://api.piped.private.coffee"
     ],
     "hls": [],
     "invidious": [
-        "https://lekker.gay"
+        "https://invidious.reallyaweso.me"
     ],
     "hyperpipe": "https://hyperpipeapi.drgns.space",
-    "status": 0
+    "status": -1
 }

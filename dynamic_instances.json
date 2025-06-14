@@ -2,8 +2,9 @@
     "piped": [
         "https://pipedapi.drgns.space",
         "https://pipedapi.adminforge.de",
-        "https://pipedapi.ducks.party",
         "https://api.piped.private.coffee",
+        "https://pipedapi.ducks.party",
+        "https://piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [],

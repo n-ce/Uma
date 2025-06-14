@@ -2,15 +2,16 @@
     "piped": [
         "https://pipedapi.drgns.space",
         "https://pipedapi.adminforge.de",
-        "https://pol1.piapi.ggtyler.dev",
+        "https://nyc1.piapi.ggtyler.dev",
         "https://pipedapi.ducks.party",
-        "https://piapi.ggtyler.dev",
-        "https://api.piped.private.coffee"
+        "https://pol1.piapi.ggtyler.dev",
+        "https://api.piped.private.coffee",
+        "https://piapi.ggtyler.dev"
     ],
     "hls": [],
     "invidious": [
         "https://lekker.gay"
     ],
-    "hyperpipe": "https://hyperpipeapi.drgns.space",
+    "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 0
 }

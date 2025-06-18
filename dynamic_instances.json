@@ -2,17 +2,17 @@
     "piped": [
         "https://pipedapi.reallyaweso.me",
         "https://nyc1.piapi.ggtyler.dev",
-        "https://api.piped.private.coffee",
-        "https://cal1.piapi.ggtyler.dev",
         "https://pipedapi.drgns.space",
         "https://piapi.ggtyler.dev",
+        "https://cal1.piapi.ggtyler.dev",
+        "https://pipedapi.ducks.party",
         "https://pol1.piapi.ggtyler.dev",
-        "https://pipedapi.ducks.party"
+        "https://api.piped.private.coffee"
     ],
     "hls": [],
     "invidious": [
-        "https://invidious.adminforge.de"
+        "https://invidious.nikkosphere.com"
     ],
-    "hyperpipe": "https://hpapi.ggtyler.dev",
-    "status": -1
+    "hyperpipe": "https://musicapi.adminforge.de",
+    "status": 0
 }

@@ -1,13 +1,13 @@
 {
     "piped": [
-        "https://pipedapi.adminforge.de",
-        "https://pipedapi.reallyaweso.me",
         "https://pipedapi.drgns.space",
-        "https://api.piped.private.coffee",
-        "https://nyc1.piapi.ggtyler.dev",
         "https://pipedapi.ducks.party",
-        "https://piapi.ggtyler.dev",
         "https://cal1.piapi.ggtyler.dev",
+        "https://pipedapi.reallyaweso.me",
+        "https://pipedapi.adminforge.de",
+        "https://api.piped.private.coffee",
+        "https://piapi.ggtyler.dev",
+        "https://nyc1.piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [],

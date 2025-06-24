@@ -3,16 +3,16 @@
         "https://pipedapi.adminforge.de",
         "https://pipedapi.reallyaweso.me",
         "https://api.piped.private.coffee",
-        "https://pipedapi.ducks.party",
-        "https://pipedapi.drgns.space",
-        "https://pol1.piapi.ggtyler.dev",
         "https://cal1.piapi.ggtyler.dev",
+        "https://pipedapi.drgns.space",
+        "https://pipedapi.ducks.party",
+        "https://nyc1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
-        "https://nyc1.piapi.ggtyler.dev"
+        "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [],
     "invidious": [
-        "https://invidious.reallyaweso.me"
+        "https://invidious.schenkel.eti.br"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": -1

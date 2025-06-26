@@ -2,17 +2,17 @@
     "piped": [
         "https://pipedapi.drgns.space",
         "https://cal1.piapi.ggtyler.dev",
-        "https://pipedapi.reallyaweso.me",
+        "https://piapi.ggtyler.dev",
         "https://pipedapi.adminforge.de",
         "https://nyc1.piapi.ggtyler.dev",
+        "https://pipedapi.reallyaweso.me",
         "https://pipedapi.ducks.party",
         "https://api.piped.private.coffee",
-        "https://piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [],
     "invidious": [
-        "https://invidious.schenkel.eti.br"
+        "https://invidious.nikkosphere.com"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": -1

@@ -7,21 +7,22 @@ import { gethp } from './hyperpipe';
 const piped_instances = 'https://raw.githubusercontent.com/TeamPiped/documentation/refs/heads/main/content/docs/public-instances/index.md';
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
 const unified_instances = JSON.parse(readFileSync('./unified_instances.json', 'utf8'));
+const jiosaavn_instances = [
+  'https://saavn-sigma.vercel.app',
+  'https://jiosavan-ytify.vercel.app'
+];
 const di: {
   piped: string[],
   invidious: string[],
   hyperpipe: string,
-  jiosaavn: string[],
+  jiosaavn: string,
   status: number
 } = {
   piped: [],
   hls: [],
   invidious: [],
   hyperpipe: '',
-  jiosaavn: [
-    'https://saavn-sigma.vercel.app',
-    'https://jiosavan-ytify.vercel.app'
-  ],
+  jiosaavn: '',
   status: 1
 };
 
@@ -116,6 +117,7 @@ fetch(piped_instances)
       });
     
     di.hyperpipe = await gethp();
+    di.jiosaavn = jiosaavn_instances[Math.floor(Math.random() * jiosaavn_instances.length)];
     
     console.log(di);
     

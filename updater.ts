@@ -20,6 +20,7 @@ const di: {
   hyperpipe: '',
   jiosaavn: [
     'https://saavn-sigma.vercel.app'
+    'https://jiosavan-ytify.vercel.app'
   ],
   status: 1
 };

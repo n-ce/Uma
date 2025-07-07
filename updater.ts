@@ -11,12 +11,16 @@ const di: {
   piped: string[],
   invidious: string[],
   hyperpipe: string,
+  jiosaavn: string[],
   status: number
 } = {
   piped: [],
   hls: [],
   invidious: [],
   hyperpipe: '',
+  jiosaavn: [
+    'https://saavn-sigma.vercel.app'
+  ],
   status: 1
 };
 

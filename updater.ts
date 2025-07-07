@@ -19,7 +19,8 @@ const di: {
   invidious: [],
   hyperpipe: '',
   jiosaavn: [
-    'https://saavn-sigma.vercel.app'
+    'https://saavn-sigma.vercel.app',
+    'https://jiosavan-ytify.vercel.app'
   ],
   status: 1
 };

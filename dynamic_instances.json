@@ -1,19 +1,19 @@
 {
     "piped": [
         "https://cal1.piapi.ggtyler.dev",
-        "https://api.piped.private.coffee",
-        "https://pipedapi.orangenet.cc",
-        "https://pol1.piapi.ggtyler.dev",
-        "https://nyc1.piapi.ggtyler.dev",
         "https://pipedapi.drgns.space",
         "https://piapi.ggtyler.dev",
+        "https://api.piped.private.coffee",
+        "https://nyc1.piapi.ggtyler.dev",
+        "https://pipedapi.orangenet.cc",
+        "https://pol1.piapi.ggtyler.dev",
         "https://pipedapi.ducks.party"
     ],
     "hls": [],
     "invidious": [
-        "https://invidious.reallyaweso.me"
+        "https://cal1.iv.ggtyler.dev"
     ],
-    "hyperpipe": "https://musicapi.reallyaweso.me",
+    "hyperpipe": "https://hyperpipeapi.darkness.services",
     "jiosaavn": "https://saavn-sigma.vercel.app",
-    "status": -1
+    "status": 0
 }

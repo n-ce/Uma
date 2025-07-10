@@ -2,8 +2,8 @@
     "piped": [
         "https://pipedapi.drgns.space",
         "https://api.piped.private.coffee",
-        "https://pipedapi.orangenet.cc",
         "https://cal1.piapi.ggtyler.dev",
+        "https://pipedapi.orangenet.cc",
         "https://pipedapi.ducks.party",
         "https://pol1.piapi.ggtyler.dev",
         "https://nyc1.piapi.ggtyler.dev",
@@ -15,7 +15,7 @@
         "https://cal1.iv.ggtyler.dev",
         "https://lekker.gay"
     ],
-    "hyperpipe": "https://hpapi.ggtyler.dev",
+    "hyperpipe": "https://hyperpipe-api.lunar.icu",
     "jiosaavn": "https://saavn-sigma.vercel.app",
     "status": 0
 }

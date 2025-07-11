@@ -42,6 +42,6 @@ export async function gethp() {
       .filter((i) => i[0])
     );
 
-  return data[0][1];
+  return data[0] ? data[0][1] : 'https://hyperpipeapi.onrender.com';
 
 }

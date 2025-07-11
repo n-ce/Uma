@@ -1,7 +1,9 @@
 const instances = [
   "https://hpapi.ngn.tf",
-  "https://hpapi.ggtyler.dev",
   "https://hyperpipeapi.pfcd.me",
+  "https://pol1.hpapi.ggtyler.dev",
+  "https://cal1.hpapi.ggtyler.dev",
+  "https://nyc1.hpapi.ggtyler.dev",
   "https://musicapi.adminforge.de",
   "https://musicapi.reallyaweso.me",
   "https://hyperpipe-api.lunar.icu",

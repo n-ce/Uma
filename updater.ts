@@ -9,6 +9,7 @@ const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'))
 const unified_instances = JSON.parse(readFileSync('./unified_instances.json', 'utf8'));
 const jiosaavn_instances = [
   'https://saavn-sigma.vercel.app',
+  'https://saavn-ytify.vercel.app',
   'https://jiosavan-ytify.vercel.app'
 ];
 const di: {

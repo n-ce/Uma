@@ -1,10 +1,10 @@
 {
     "piped": [
         "https://pipedapi.drgns.space",
-        "https://pipedapi.ducks.party",
-        "https://pol1.piapi.ggtyler.dev",
         "https://nyc1.piapi.ggtyler.dev",
+        "https://pol1.piapi.ggtyler.dev",
         "https://api.piped.private.coffee",
+        "https://pipedapi.ducks.party",
         "https://piapi.ggtyler.dev"
     ],
     "hls": [],
@@ -12,7 +12,7 @@
         "https://invidious.nikkosphere.com",
         "https://lekker.gay"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com",
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "hyperpipe": "https://hyperpipe-api.lunar.icu",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "status": 0
 }

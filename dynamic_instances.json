@@ -1,10 +1,10 @@
 {
     "piped": [
-        "https://api.piped.private.coffee",
-        "https://pipedapi.ducks.party",
         "https://pipedapi.drgns.space",
+        "https://pipedapi.ducks.party",
+        "https://api.piped.private.coffee",
         "https://nyc1.piapi.ggtyler.dev",
-        "https://piapi.ggtyler.dev"
+        "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [],
     "invidious": [
@@ -12,6 +12,6 @@
         "https://lekker.gay"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "status": 0
 }

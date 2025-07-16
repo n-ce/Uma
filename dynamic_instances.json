@@ -2,16 +2,15 @@
     "piped": [
         "https://pipedapi.ducks.party",
         "https://pipedapi.drgns.space",
-        "https://api.piped.private.coffee",
-        "https://nyc1.piapi.ggtyler.dev",
-        "https://piapi.ggtyler.dev"
+        "https://api.piped.private.coffee"
     ],
     "hls": [],
     "invidious": [
         "https://invidious.nikkosphere.com",
-        "https://cal1.iv.ggtyler.dev"
+        "https://cal1.iv.ggtyler.dev",
+        "https://lekker.gay"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "status": 0
 }

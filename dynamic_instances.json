@@ -6,9 +6,10 @@
     ],
     "hls": [],
     "invidious": [
+        "https://cal1.iv.ggtyler.dev",
         "https://lekker.gay"
     ],
     "hyperpipe": "https://nyc1.hpapi.ggtyler.dev",
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "status": 0
 }

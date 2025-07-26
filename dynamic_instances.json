@@ -1,6 +1,13 @@
 {
     "piped": [
-        "https://cal1.piapi.ggtyler.dev"
+        "https://cal1.piapi.ggtyler.dev",
+        "https://pipedapi.drgns.space",
+        "https://pipedapi.orangenet.cc",
+        "https://pol1.piapi.ggtyler.dev",
+        "https://piapi.ggtyler.dev",
+        "https://nyc1.piapi.ggtyler.dev",
+        "https://pipedapi.ducks.party",
+        "https://api.piped.private.coffee"
     ],
     "hls": [],
     "invidious": [
@@ -8,5 +15,5 @@
     ],
     "hyperpipe": "https://cal1.hpapi.ggtyler.dev",
     "jiosaavn": "https://saavn-sigma.vercel.app",
-    "status": 1
+    "status": 0
 }

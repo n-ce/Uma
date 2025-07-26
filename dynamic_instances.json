@@ -1,17 +1,16 @@
 {
     "piped": [
-        "https://nyc1.piapi.ggtyler.dev",
         "https://pipedapi.drgns.space",
-        "https://pipedapi.orangenet.cc",
-        "https://cal1.piapi.ggtyler.dev",
-        "https://pol1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
+        "https://api.piped.private.coffee",
+        "https://nyc1.piapi.ggtyler.dev",
         "https://pipedapi.ducks.party",
-        "https://api.piped.private.coffee"
+        "https://pipedapi.orangenet.cc",
+        "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [],
     "invidious": [
-        "https://invidious.nikkosphere.com"
+        "https://y.com.sb"
     ],
     "hyperpipe": "https://nyc1.hpapi.ggtyler.dev",
     "jiosaavn": "https://jiosavan-ytify.vercel.app",

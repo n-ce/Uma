@@ -2,8 +2,8 @@
     "piped": [
         "https://nyc1.piapi.ggtyler.dev",
         "https://cal1.piapi.ggtyler.dev",
-        "https://piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev",
+        "https://piapi.ggtyler.dev",
         "https://api.piped.private.coffee"
     ],
     "hls": [],
@@ -11,6 +11,6 @@
         "https://pol1.iv.ggtyler.dev"
     ],
     "hyperpipe": "https://nyc1.hpapi.ggtyler.dev",
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "status": 0
 }

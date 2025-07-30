@@ -1,10 +1,10 @@
 {
     "piped": [
         "https://pipedapi.drgns.space",
+        "https://piapi.ggtyler.dev",
         "https://cal1.piapi.ggtyler.dev",
         "https://nyc1.piapi.ggtyler.dev",
         "https://api.piped.private.coffee",
-        "https://piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [],
@@ -12,6 +12,6 @@
         "https://pol1.iv.ggtyler.dev"
     ],
     "hyperpipe": "https://nyc1.hpapi.ggtyler.dev",
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "status": 0
 }

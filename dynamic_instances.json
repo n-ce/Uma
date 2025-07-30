@@ -1,15 +1,15 @@
 {
     "piped": [
         "https://pipedapi.drgns.space",
+        "https://nyc1.piapi.ggtyler.dev",
         "https://cal1.piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev",
-        "https://nyc1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
         "https://api.piped.private.coffee"
     ],
     "hls": [],
     "invidious": [
-        "https://invidious.reallyaweso.me"
+        "https://invidious.nikkosphere.com"
     ],
     "hyperpipe": "https://nyc1.hpapi.ggtyler.dev",
     "jiosaavn": "https://saavn-ytify.vercel.app",

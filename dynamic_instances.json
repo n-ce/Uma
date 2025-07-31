@@ -12,18 +12,18 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "invidious": [
-        "https://cal1.iv.ggtyler.dev"
+        "https://invidious.reallyaweso.me"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
-        "https://cal1.hpapi.ggtyler.dev",
         "https://nyc1.hpapi.ggtyler.dev",
+        "https://cal1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
-        "https://hyperpipeapi.ducks.party",
         "https://pol1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "status": -1,
     "health": "P"
 }

@@ -8,7 +8,8 @@ export async function proxyTest(i: string): Promise<string | null> {
         return data;
       else throw new Error(data.error);
     })
-    .then(data => data.audioStreams[0].url);
+    .then(data => data.audioStreams[0].url)
+    .catch(() => '');
 
 
   if (!url) return '';

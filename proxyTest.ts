@@ -3,7 +3,7 @@ export async function proxyTest(i: string): Promise<string | null> {
   const url = await fetch(`${i}/streams/ic8j13piAhQ`)
     .then(res => res.json())
     .then(data => {
-      console.log(i, `data: ${'audioStreams' in data}, audioStreams: ${data.audioStreams.length}`)
+      console.log(i, `data: ${'audioStreams' in data}, audioStreams: ${data?.audioStreams?.length || 0}`)
       if (data && 'audioStreams' in data)
         return data;
       else throw new Error(data.error);

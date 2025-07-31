@@ -130,6 +130,7 @@ fetch(piped_instances)
 
     di.hyperpipe = await gethp();
     di.jiosaavn = jiosaavn_instances[Math.floor(Math.random() * jiosaavn_instances.length)];
+    di.health = di.piped.length ? 'U' : di.proxy.length ? 'P' : di.invidious.length ? 'I' : 'N';
 
     console.log(di);
 
@@ -144,8 +145,6 @@ fetch(piped_instances)
       di.status--;
       di.invidious.push(iv[0]);
     }
-
-    di.health = di.piped.length ? 'U' : di.proxy.length ? 'P' : di.invidious.length ? 'I' : 'N';
 
     writeFileSync(
       'dynamic_instances.json',

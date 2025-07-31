@@ -15,10 +15,10 @@
         "https://cal1.iv.ggtyler.dev"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
-        "https://hyperpipeapi.onrender.com",
         "https://cal1.hpapi.ggtyler.dev",
         "https://nyc1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.ducks.party",
         "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipebackend.in.projectsegfau.lt"

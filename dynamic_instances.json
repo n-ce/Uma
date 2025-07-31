@@ -1,10 +1,10 @@
 {
     "piped": [
-        "https://nyc1.piapi.ggtyler.dev",
+        "https://pipedapi.drgns.space",
         "https://cal1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev",
-        "https://pipedapi.drgns.space",
+        "https://nyc1.piapi.ggtyler.dev",
         "https://api.piped.private.coffee"
     ],
     "hls": [],
@@ -12,7 +12,7 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "invidious": [
-        "https://invidious.nikkosphere.com"
+        "https://y.com.sb"
     ],
     "hyperpipe": [
         null,

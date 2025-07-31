@@ -42,6 +42,6 @@ export async function gethp(): Promise<string[]> {
       .filter((i) => i[0])
     );
 
-  return data[0].map(v => v[1] as string);
+  return data.map(v => v[1] as string);
 
 }

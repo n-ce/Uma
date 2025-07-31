@@ -18,7 +18,7 @@ const instances = [
   "https://hyperpipebackend.in.projectsegfau.lt"
 ];
 
-export async function gethp() {
+export async function gethp(): Promise<string[]> {
 
   const hp = async (i: string) => {
     const t = performance.now();
@@ -42,6 +42,6 @@ export async function gethp() {
       .filter((i) => i[0])
     );
 
-  return data[0] ? data[0][1] : 'https://hyperpipeapi.onrender.com';
+  return data[0].map(v => v[1] as string);
 
 }

@@ -1,7 +1,9 @@
+// @ts-ignore
 import { writeFileSync, readFileSync } from 'fs';
 import { loadTest } from './loadTest';
 import { unifiedTest } from './unifiedTest';
 import { hlsTest } from './hlsTest';
+import { proxyTest } from './proxyTest';
 import { gethp } from './hyperpipe';
 
 const piped_instances = 'https://raw.githubusercontent.com/TeamPiped/documentation/refs/heads/main/content/docs/public-instances/index.md';
@@ -12,19 +14,19 @@ const jiosaavn_instances = [
   'https://saavn-ytify.vercel.app',
   'https://jiosavan-ytify.vercel.app'
 ];
-const di: {
-  piped: string[],
-  invidious: string[],
-  hyperpipe: string,
+const di: Record<'piped' | 'invidious' | 'hyperpipe' | 'proxy' | 'hls', string[]> & {
   jiosaavn: string,
-  status: number
+  status: number,
+  health: 'U' | 'P' | 'I' | 'N',
 } = {
   piped: [],
   hls: [],
+  proxy: [],
   invidious: [],
-  hyperpipe: '',
+  hyperpipe: [],
   jiosaavn: '',
-  status: 1
+  status: 1,
+  health: 'N'
 };
 
 async function getSuggestions(i: string) {
@@ -54,7 +56,7 @@ const getInstances = async (instanceArray: string[]): Promise<string[]> => Promi
 
 function getInstanceUrls(text: string) {
   const lines = text.split('\n');
-  const instanceUrls = [];
+  const instanceUrls: string[] = [];
   let startParsing = false;
 
   for (const line of lines) {
@@ -91,15 +93,24 @@ fetch(piped_instances)
 
     const pi = await getInstances(piped_instances);
     const iv = await getInstances(invidious_instances);
-    
+
+    (await Promise.all(pi.map(proxyTest)))
+      .filter(h => h)
+      .forEach(async i => {
+        if (i)
+          di.proxy.push(i);
+      });
+
+
     (await Promise.all(pi.map(hlsTest)))
       .filter(h => h)
       .forEach(async i => {
+        if (!i) return;
         if (i in unified_instances) {
           const u = unified_instances[i];
           const isAlive = iv.includes(u);
           if (isAlive) {
-            const passed = await unifiedTest(i,u);
+            const passed = await unifiedTest(i, u);
             if (passed) {
               di.piped.push(i);
               di.invidious.push(u);
@@ -114,25 +125,27 @@ fetch(piped_instances)
     (await Promise.all(iv.map(loadTest)))
       .filter(p => p)
       .forEach(i => {
-        di.invidious.push(i);
+        if (i) di.invidious.push(i);
       });
-    
+
     di.hyperpipe = await gethp();
     di.jiosaavn = jiosaavn_instances[Math.floor(Math.random() * jiosaavn_instances.length)];
-    
+
     console.log(di);
-    
+
     if (!di.piped.length) {
       di.status--;
       pi
         .filter(i => !di.hls.concat(di.piped).includes(i))
         .forEach(i => di.piped.push(i));
     }
-    
+
     if (!di.invidious.length) {
       di.status--;
       di.invidious.push(iv[0]);
     }
+
+    di.health = di.piped.length ? 'U' : di.proxy.length ? 'P' : di.invidious.length ? 'I' : 'N';
 
     writeFileSync(
       'dynamic_instances.json',

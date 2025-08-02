@@ -16,7 +16,6 @@ const jiosaavn_instances = [
 ];
 const di: Record<'piped' | 'invidious' | 'hyperpipe' | 'proxy' | 'hls', string[]> & {
   jiosaavn: string,
-  status: number,
   health: 'U' | 'P' | 'I' | 'N',
 } = {
   piped: [],
@@ -25,7 +24,6 @@ const di: Record<'piped' | 'invidious' | 'hyperpipe' | 'proxy' | 'hls', string[]
   invidious: [],
   hyperpipe: [],
   jiosaavn: '',
-  status: 1,
   health: 'N'
 };
 
@@ -130,21 +128,19 @@ fetch(piped_instances)
 
     di.hyperpipe = await gethp();
     di.jiosaavn = jiosaavn_instances[Math.floor(Math.random() * jiosaavn_instances.length)];
-    di.health = di.piped.length ? 'U' : di.proxy.length ? 'P' : di.invidious.length ? 'I' : 'N';
-
+    // di.health = di.piped.length ? 'U' : di.proxy.length ? 'P' : di.invidious.length ? 'I' : 'N';
+    di.health = 'U';
+    
     console.log(di);
 
     if (!di.piped.length) {
-      di.status--;
       pi
         .filter(i => !di.hls.concat(di.piped).includes(i))
         .forEach(i => di.piped.push(i));
     }
 
-    if (!di.invidious.length) {
-      di.status--;
-      di.invidious.push(iv[0]);
-    }
+    if (!di.invidious.length)
+      di.forEach(i => di.invidious.push(i));
 
     writeFileSync(
       'dynamic_instances.json',

@@ -1,38 +1,39 @@
 {
     "piped": [
-        "https://pipedapi.drgns.space",
         "https://cal1.piapi.ggtyler.dev",
-        "https://pol1.piapi.ggtyler.dev",
         "https://nyc1.piapi.ggtyler.dev",
-        "https://api.piped.private.coffee",
+        "https://pipedapi.drgns.space",
+        "https://pol1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
+        "https://api.piped.private.coffee",
         "https://pipedapi.ducks.party"
     ],
     "hls": [],
-    "proxy": [],
+    "proxy": [
+        "https://pipedapi.ducks.party"
+    ],
     "invidious": [
         "https://invidious.reallyaweso.me",
-        "https://nyc1.iv.ggtyler.dev",
         "https://cal1.iv.ggtyler.dev",
-        "https://y.com.sb",
-        "https://invidious.baczek.me",
-        "https://lekker.gay",
+        "https://nyc1.iv.ggtyler.dev",
         "https://iv.ggtyler.dev",
-        "https://pol1.iv.ggtyler.dev",
         "https://iv.duti.dev",
-        "https://yt.omada.cafe",
+        "https://invidious.baczek.me",
         "https://iv.melmac.space",
+        "https://pol1.iv.ggtyler.dev",
+        "https://y.com.sb",
+        "https://yt.omada.cafe",
         "https://inv.vern.cc"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",
-        "https://nyc1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.darkness.services",
-        "https://hyperpipeapi.ducks.party",
+        "https://nyc1.hpapi.ggtyler.dev",
         "https://cal1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.ducks.party",
         "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
     "jiosaavn": "https://saavn-sigma.vercel.app",
-    "health": "N"
+    "health": "P"
 }

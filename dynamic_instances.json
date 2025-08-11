@@ -10,26 +10,26 @@
     "hls": [],
     "proxy": [],
     "invidious": [
-        "https://nyc1.iv.ggtyler.dev",
-        "https://iv.ggtyler.dev",
-        "https://cal1.iv.ggtyler.dev",
+        "https://invidious.reallyaweso.me",
         "https://y.com.sb",
         "https://invidious.baczek.me",
         "https://iv.melmac.space",
-        "https://pol1.iv.ggtyler.dev",
+        "https://cal1.iv.ggtyler.dev",
         "https://lekker.gay",
-        "https://iv.duti.dev",
+        "https://iv.ggtyler.dev",
+        "https://nyc1.iv.ggtyler.dev",
+        "https://pol1.iv.ggtyler.dev",
         "https://inv.vern.cc",
-        "https://invidious.reallyaweso.me",
+        "https://iv.duti.dev",
         "https://yt.omada.cafe"
     ],
     "hyperpipe": [
-        "https://nyc1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.onrender.com",
+        "https://nyc1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.darkness.services",
         "https://cal1.hpapi.ggtyler.dev",
         "https://pol1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.darkness.services",
-        "https://hyperpipebackend.in.projectsegfau.lt"
+        "https://hyperpipeapi.ducks.party"
     ],
     "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "N"

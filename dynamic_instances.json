@@ -1,9 +1,9 @@
 {
     "piped": [
         "https://cal1.piapi.ggtyler.dev",
+        "https://nyc1.piapi.ggtyler.dev",
         "https://pipedapi.drgns.space",
         "https://piapi.ggtyler.dev",
-        "https://nyc1.piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev",
         "https://api.piped.private.coffee"
     ],
@@ -12,7 +12,6 @@
         "https://api.piped.private.coffee"
     ],
     "invidious": [
-        "https://lekker.gay",
         "https://pol1.iv.ggtyler.dev"
     ],
     "hyperpipe": [
@@ -22,6 +21,6 @@
         "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.ducks.party"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "P"
 }

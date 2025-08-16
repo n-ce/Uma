@@ -1,9 +1,9 @@
 {
     "piped": [
-        "https://nyc1.piapi.ggtyler.dev",
         "https://cal1.piapi.ggtyler.dev",
-        "https://pol1.piapi.ggtyler.dev",
-        "https://piapi.ggtyler.dev"
+        "https://nyc1.piapi.ggtyler.dev",
+        "https://piapi.ggtyler.dev",
+        "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [],
     "proxy": [],
@@ -12,13 +12,13 @@
         "https://lekker.gay"
     ],
     "hyperpipe": [
-        "https://nyc1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
+        "https://nyc1.hpapi.ggtyler.dev",
         "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipebackend.in.projectsegfau.lt",
         "https://hyperpipeapi.ducks.party"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "I"
 }

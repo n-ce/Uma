@@ -1,6 +1,5 @@
 {
     "piped": [
-        "https://api.piped.private.coffee",
         "https://cal1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
         "https://nyc1.piapi.ggtyler.dev",
@@ -9,25 +8,27 @@
     "hls": [],
     "proxy": [],
     "invidious": [
-        "https://y.com.sb",
-        "https://invidious.baczek.me",
+        "https://invidious.reallyaweso.me",
         "https://lekker.gay",
-        "https://iv.duti.dev",
+        "https://y.com.sb",
         "https://inv.vern.cc",
-        "https://yt.omada.cafe",
+        "https://iv.duti.dev",
         "https://nyc1.iv.ggtyler.dev",
         "https://iv.ggtyler.dev",
-        "https://invidious.reallyaweso.me",
-        "https://pol1.iv.ggtyler.dev",
+        "https://yt.omada.cafe",
+        "https://invidious.baczek.me",
         "https://iv.melmac.space",
+        "https://pol1.iv.ggtyler.dev",
         "https://cal1.iv.ggtyler.dev"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://nyc1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipebackend.in.projectsegfau.lt"
+        "https://pol1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.darkness.services",
+        "https://hyperpipebackend.in.projectsegfau.lt",
+        "https://hyperpipeapi.ducks.party"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "N"
 }

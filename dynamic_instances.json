@@ -1,23 +1,24 @@
 {
     "piped": [
         "https://pipedapi.drgns.space",
-        "https://cal1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
+        "https://cal1.piapi.ggtyler.dev",
         "https://nyc1.piapi.ggtyler.dev",
         "https://api.piped.private.coffee"
     ],
     "hls": [],
-    "proxy": [],
+    "proxy": [
+        "https://api.piped.private.coffee"
+    ],
     "invidious": [
-        "https://invidious.nikkosphere.com",
-        "https://lekker.gay"
+        "https://invidious.nikkosphere.com"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipebackend.in.projectsegfau.lt",
-        "https://hyperpipeapi.ducks.party"
+        "https://hyperpipeapi.ducks.party",
+        "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
-    "health": "I"
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "health": "P"
 }

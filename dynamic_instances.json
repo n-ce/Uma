@@ -14,12 +14,12 @@
         "https://invidious.nikkosphere.com"
     ],
     "hyperpipe": [
+        "https://nyc1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
-        "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "P"
 }

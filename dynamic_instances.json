@@ -1,8 +1,8 @@
 {
     "piped": [
-        "https://pipedapi.drgns.space",
         "https://cal1.piapi.ggtyler.dev",
         "https://nyc1.piapi.ggtyler.dev",
+        "https://pipedapi.drgns.space",
         "https://piapi.ggtyler.dev",
         "https://api.piped.private.coffee"
     ],
@@ -17,12 +17,13 @@
     ],
     "hyperpipe": [
         "https://hyperpipeapi.darkness.services",
-        "https://cal1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.onrender.com",
         "https://nyc1.hpapi.ggtyler.dev",
+        "https://cal1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.ducks.party",
         "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "P"
 }

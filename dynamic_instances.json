@@ -12,17 +12,18 @@
     ],
     "invidious": [
         "https://invidious.nikkosphere.com",
-        "https://yt.omada.cafe"
+        "https://yt.omada.cafe",
+        "https://lekker.gay"
     ],
     "hyperpipe": [
+        "https://hyperpipeapi.darkness.services",
+        "https://cal1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.onrender.com",
         "https://nyc1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.ducks.party",
-        "https://cal1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.darkness.services",
         "https://pol1.hpapi.ggtyler.dev",
-        "https://hyperpipebackend.in.projectsegfau.lt"
+        "https://hyperpipebackend.in.projectsegfau.lt",
+        "https://hyperpipeapi.ducks.party"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "P"
 }

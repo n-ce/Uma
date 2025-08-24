@@ -10,16 +10,15 @@
         "https://api.piped.private.coffee"
     ],
     "invidious": [
-        "https://lekker.gay",
         "https://yt.omada.cafe"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
-        "https://hyperpipeapi.ducks.party",
-        "https://pol1.hpapi.ggtyler.dev",
         "https://nyc1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
         "https://cal1.hpapi.ggtyler.dev",
+        "https://pol1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
     "jiosaavn": "https://saavn-sigma.vercel.app",

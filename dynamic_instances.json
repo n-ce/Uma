@@ -1,8 +1,8 @@
 {
     "piped": [
-        "https://nyc1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
         "https://cal1.piapi.ggtyler.dev",
+        "https://nyc1.piapi.ggtyler.dev",
         "https://api.piped.private.coffee"
     ],
     "hls": [],
@@ -15,12 +15,12 @@
         "https://yt.omada.cafe"
     ],
     "hyperpipe": [
-        "https://nyc1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.darkness.services",
-        "https://cal1.hpapi.ggtyler.dev",
-        "https://pol1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.ducks.party",
         "https://hyperpipeapi.onrender.com",
+        "https://nyc1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.ducks.party",
+        "https://hyperpipeapi.darkness.services",
+        "https://pol1.hpapi.ggtyler.dev",
+        "https://cal1.hpapi.ggtyler.dev",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
     "jiosaavn": "https://jiosavan-ytify.vercel.app",

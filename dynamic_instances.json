@@ -14,13 +14,13 @@
         "https://yt.omada.cafe"
     ],
     "hyperpipe": [
-        "https://cal1.hpapi.ggtyler.dev",
-        "https://pol1.hpapi.ggtyler.dev",
-        "https://nyc1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.ducks.party",
-        "https://hyperpipebackend.in.projectsegfau.lt"
+        "https://nyc1.hpapi.ggtyler.dev",
+        "https://pol1.hpapi.ggtyler.dev",
+        "https://hyperpipebackend.in.projectsegfau.lt",
+        "https://cal1.hpapi.ggtyler.dev"
     ],
     "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "health": "P"

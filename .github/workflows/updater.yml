@@ -15,11 +15,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
+      with:
+        node-version: 'lts/*'
     - run: node updater.ts
     - name: Update List
       uses: test-room-7/action-update-file@v1
       with:
-          file-path: dynamic_instances.json
+          file-path: list.json
           commit-msg: Update List
           github-token: ${{ secrets.GITHUB_TOKEN }}
 

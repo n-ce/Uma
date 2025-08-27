@@ -3,10 +3,11 @@
         "https://api.piped.private.coffee",
         "https://pipedapi.ducks.party",
         "https://nyc1.piapi.ggtyler.dev",
-        "https://cal1.piapi.ggtyler.dev",
-        "https://piapi.ggtyler.dev"
+        "https://piapi.ggtyler.dev",
+        "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
+        "https://iv.duti.dev",
         "https://invidious.nikkosphere.com",
         "https://yt.omada.cafe",
         "https://lekker.gay",
@@ -17,7 +18,6 @@
         "https://iv.ggtyler.dev",
         "https://iv.melmac.space",
         "https://inv.vern.cc",
-        "https://iv.duti.dev",
         "https://y.com.sb"
     ],
     "hyperpipe": [
@@ -29,6 +29,6 @@
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "P"
 }

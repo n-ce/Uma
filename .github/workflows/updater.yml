@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: oven-sh/setup-bun@v2
-    - run: bun updater.ts
+    - uses: actions/setup-node@v4
+    - run: node updater.ts
     - name: Update List
       uses: test-room-7/action-update-file@v1
       with:

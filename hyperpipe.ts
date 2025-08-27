@@ -20,17 +20,17 @@ const instances = [
 
 export async function gethp(): Promise<string[]> {
 
-  const hp = async (i: string) => {
+  const hp = async (i: string): Promise<[number, string]> => {
     const t = performance.now();
 
     return fetch(`${i}/channel/UCERrDZ8oN0U_n9MphMKERcg`)
       .then(_ => _.json())
       .then(data => {
-        const score = Math.floor(1e5 / (performance.now() - t));
-        console.log(`${i} - ${score}`);
-        if (data.playlistId?.length)
-          return [score, i];
-        else throw new Error();
+        if (data.playlistId?.length) {
+          const score = Math.floor(1e5 / (performance.now() - t));
+          console.log(`${i} - ${score}`);
+          return [score, i] as [number, string];
+        } else throw new Error();
       })
       .catch(() => [0, i]);
   }
@@ -38,7 +38,7 @@ export async function gethp(): Promise<string[]> {
   const data = await Promise
     .all(instances.map(hp))
     .then(array => array
-      .sort((a, b) => <number>b[0] - <number>a[0])
+      .sort((a, b) => b[0] - a[0])
       .filter((i) => i[0])
     );
 

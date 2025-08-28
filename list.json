@@ -8,25 +8,27 @@
     ],
     "invidious": [
         "https://iv.duti.dev",
+        "https://y.com.sb",
         "https://invidious.nikkosphere.com",
+        "https://yt.omada.cafe",
         "https://invidious.reallyaweso.me",
         "https://nyc1.iv.ggtyler.dev",
+        "https://cal1.iv.ggtyler.dev",
         "https://invidious.baczek.me",
         "https://iv.melmac.space",
         "https://iv.ggtyler.dev",
-        "https://cal1.iv.ggtyler.dev",
         "https://inv.vern.cc",
         "https://lekker.gay"
     ],
     "hyperpipe": [
         "https://nyc1.hpapi.ggtyler.dev",
+        "https://cal1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.onrender.com",
+        "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.ducks.party",
-        "https://cal1.hpapi.ggtyler.dev",
-        "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "P"
 }

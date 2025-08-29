@@ -18,11 +18,11 @@ const instances = [
   "https://hyperpipebackend.in.projectsegfau.lt"
 ];
 
-export async function gethp(): Promise<string[]> {
+export default async function(): Promise<string[]> {
 
-  const hp = async (i: string): Promise<[number, string]> => {
+  async function(i: string): Promise<[number, string]> {
+    
     const t = performance.now();
-
     return fetch(`${i}/channel/UCERrDZ8oN0U_n9MphMKERcg`)
       .then(_ => _.json())
       .then(data => {

@@ -2,7 +2,7 @@
 import { writeFileSync } from 'fs';
 import test_invidious from "./test_invidious.ts";
 import test_piped from './test_piped.ts';
-import { gethp } from './hyperpipe.ts';
+import test_hyperpipe from './test_hyperpipe.ts';
 
 
 const jiosaavn_instances = [
@@ -52,7 +52,7 @@ test_piped()
     }
 
     console.log('Initiating Hyperpipe test')
-    const hp = await gethp();
+    const hp = await test_hyperpipe();
     const data = {
       piped: pi,
       invidious: sortedIv,

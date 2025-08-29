@@ -58,6 +58,7 @@ test_piped()
       invidious: sortedIv,
       hyperpipe: hp,
       jiosaavn: jiosaavn_instances[Math.floor(Math.random() * jiosaavn_instances.length)],
+      cobalt: 'https://cobalt-api.meowing.de',
       health: usePiped ? 'P' : useIv ? 'I' : 'N'
     };
     console.log(data);

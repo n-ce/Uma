@@ -20,7 +20,7 @@ const instances = [
 
 export default async function(): Promise<string[]> {
 
-  async function(i: string): Promise<[number, string]> {
+  async function hp(i: string): Promise<[number, string]> {
     
     const t = performance.now();
     return fetch(`${i}/channel/UCERrDZ8oN0U_n9MphMKERcg`)

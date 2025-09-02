@@ -12,6 +12,7 @@
         "https://y.com.sb",
         "https://invidious.nikkosphere.com",
         "https://yt.omada.cafe",
+        "https://lekker.gay",
         "https://invidious.reallyaweso.me",
         "https://nyc1.iv.ggtyler.dev",
         "https://pol1.iv.ggtyler.dev",
@@ -19,7 +20,6 @@
         "https://invidious.baczek.me",
         "https://iv.ggtyler.dev",
         "https://iv.melmac.space",
-        "https://lekker.gay",
         "https://inv.vern.cc"
     ],
     "hyperpipe": [
@@ -30,7 +30,7 @@
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "cobalt": "https://cobalt-api.meowing.de",
     "status": "P"
 }

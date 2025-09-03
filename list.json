@@ -1,11 +1,11 @@
 {
     "piped": [
         "https://pipedapi.ducks.party",
+        "https://api.piped.private.coffee",
         "https://pol1.piapi.ggtyler.dev",
-        "https://cal1.piapi.ggtyler.dev",
         "https://nyc1.piapi.ggtyler.dev",
-        "https://piapi.ggtyler.dev",
-        "https://api.piped.private.coffee"
+        "https://cal1.piapi.ggtyler.dev",
+        "https://piapi.ggtyler.dev"
     ],
     "invidious": [
         "https://iv.duti.dev",
@@ -15,8 +15,8 @@
         "https://lekker.gay",
         "https://invidious.reallyaweso.me",
         "https://nyc1.iv.ggtyler.dev",
-        "https://cal1.iv.ggtyler.dev",
         "https://pol1.iv.ggtyler.dev",
+        "https://cal1.iv.ggtyler.dev",
         "https://invidious.baczek.me",
         "https://iv.melmac.space",
         "https://iv.ggtyler.dev",

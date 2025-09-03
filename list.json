@@ -11,27 +11,22 @@
         "https://pol1.iv.ggtyler.dev",
         "https://invidious.baczek.me",
         "https://invidious.nikkosphere.com",
-        "https://yt.omada.cafe",
-        "https://lekker.gay",
         "https://invidious.reallyaweso.me",
         "https://nyc1.iv.ggtyler.dev",
         "https://cal1.iv.ggtyler.dev",
         "https://iv.melmac.space",
-        "https://iv.ggtyler.dev",
-        "https://inv.vern.cc",
-        "https://iv.duti.dev",
-        "https://y.com.sb"
+        "https://iv.ggtyler.dev"
     ],
     "hyperpipe": [
-        "https://cal1.hpapi.ggtyler.dev",
         "https://nyc1.hpapi.ggtyler.dev",
-        "https://pol1.hpapi.ggtyler.dev",
+        "https://cal1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.darkness.services",
+        "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "cobalt": "https://cobalt-api.meowing.de",
     "status": "P"
 }

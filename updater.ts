@@ -25,18 +25,18 @@ async function reorderByIvProxyTest(iv: string[], audioUrls: string[]) {
   console.log('Initiating reorder iv proxy test');
   const promises = audioUrls.flatMap(a => iv.map(i => ivProxyTest(i, a)));
   const results = await Promise.all(promises);
-  const successfulInstances = new Set(results.filter(r => r !== ''));
+  const successfulInstances = results.filter(r => r !== '');
 
   iv.sort((a, b) => {
-    const aPassed = successfulInstances.has(a);
-    const bPassed = successfulInstances.has(b);
+    const aPassed = successfulInstances.includes(a);
+    const bPassed = successfulInstances.includes(b);
 
     if (aPassed && !bPassed) return -1;
     if (!aPassed && bPassed) return 1;
     return 0;
   });
 
-  return iv;
+  return successfulInstances ? iv : [];
 }
 
 
@@ -45,17 +45,19 @@ test_piped()
     const [pi, usePiped, audioUrls] = res;
     const [iv, useIv] = await test_invidious();
 
-    let sortedIv = iv;
+    let sortedIv = [];
     if (usePiped) {
       console.log('Piped is able to achieve playback, reordering invidious by proxying capability');
       sortedIv = await reorderByIvProxyTest(iv, audioUrls);
     }
+    
+    let usePiped = sortedIv.length > 0;
 
     console.log('Initiating Hyperpipe test')
     const hp = await test_hyperpipe();
     const data = {
       piped: pi,
-      invidious: sortedIv,
+      invidious: usePiped ? sortedIv : iv,
       hyperpipe: hp,
       jiosaavn: jiosaavn_instances[Math.floor(Math.random() * jiosaavn_instances.length)],
       cobalt: 'https://cobalt-api.meowing.de',

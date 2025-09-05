@@ -81,7 +81,7 @@ async function proxyTest(i: string, url: string | null): Promise<string | null> 
   return passed ? i : '';
 }
 
-async function reorderInstancesByProxyTest(instances: string[]): Promise<[string[], boolean, string[]]> {
+async function reorderInstancesByProxyTest(instances: string[]): Promise<[string[], boolean, [string, string][]]> {
   console.log('Initiating proxy test to reorder instances...');
   const audioUrls = await Promise.all(instances.map(getAudioUrl));
   const proxyResults = await Promise.all(audioUrls.map(([instance, url]) => proxyTest(instance, url)));
@@ -97,8 +97,7 @@ async function reorderInstancesByProxyTest(instances: string[]): Promise<[string
 
   return [instances, proxyResults.length > 0,
     audioUrls
-      .map(v => v[1])
-      .filter(v => v)
+      .filter(v => v[1])
   ];
 }
 

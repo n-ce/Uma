@@ -15,13 +15,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: main
+        ref: v1
     - uses: oven-sh/setup-bun@v2
     - run: bun updater.ts
     - name: Update List (v1)
       uses: test-room-7/action-update-file@v1
       with:
-          ref: main
           file-path: dynamic_instances.json
           commit-msg: Update List
           github-token: ${{ secrets.GITHUB_TOKEN }}

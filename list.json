@@ -2,8 +2,8 @@
     "piped": [
         "https://pipedapi.ducks.party",
         "https://api.piped.private.coffee",
-        "https://cal1.piapi.ggtyler.dev",
         "https://nyc1.piapi.ggtyler.dev",
+        "https://cal1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev"
     ],
@@ -14,20 +14,20 @@
         "https://yt.omada.cafe",
         "https://lekker.gay",
         "https://invidious.reallyaweso.me",
-        "https://cal1.iv.ggtyler.dev",
         "https://nyc1.iv.ggtyler.dev",
+        "https://cal1.iv.ggtyler.dev",
         "https://pol1.iv.ggtyler.dev",
         "https://invidious.baczek.me",
-        "https://iv.melmac.space",
         "https://iv.ggtyler.dev",
+        "https://iv.melmac.space",
         "https://inv.vern.cc"
     ],
     "hyperpipe": [
         "https://cal1.hpapi.ggtyler.dev",
         "https://nyc1.hpapi.ggtyler.dev",
+        "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
-        "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.ducks.party"
     ],
     "jiosaavn": "https://jiosavan-ytify.vercel.app",

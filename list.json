@@ -9,20 +9,29 @@
     ],
     "invidious": [
         "https://invidious.nikkosphere.com",
+        "https://yt.omada.cafe",
         "https://invidious.reallyaweso.me",
-        "https://nyc1.iv.ggtyler.dev",
+        "https://cal1.iv.ggtyler.dev",
         "https://pol1.iv.ggtyler.dev",
-        "https://invidious.baczek.me"
+        "https://nyc1.iv.ggtyler.dev",
+        "https://invidious.baczek.me",
+        "https://iv.melmac.space",
+        "https://iv.ggtyler.dev",
+        "https://iv.duti.dev",
+        "https://lekker.gay",
+        "https://y.com.sb",
+        "https://inv.vern.cc"
     ],
     "hyperpipe": [
+        "https://cal1.hpapi.ggtyler.dev",
         "https://nyc1.hpapi.ggtyler.dev",
         "https://pol1.hpapi.ggtyler.dev",
-        "https://cal1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipeapi.ducks.party"
+        "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.ducks.party",
+        "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "cobalt": "https://cobalt-api.meowing.de",
     "status": "I"
 }

@@ -11,24 +11,24 @@
         "https://invidious.nikkosphere.com",
         "https://invidious.reallyaweso.me",
         "https://nyc1.iv.ggtyler.dev",
-        "https://cal1.iv.ggtyler.dev",
         "https://pol1.iv.ggtyler.dev",
+        "https://cal1.iv.ggtyler.dev",
         "https://invidious.baczek.me",
-        "https://iv.ggtyler.dev",
         "https://iv.melmac.space",
+        "https://iv.ggtyler.dev",
         "https://yt.omada.cafe",
+        "https://inv.vern.cc",
         "https://lekker.gay",
-        "https://iv.duti.dev",
-        "https://y.com.sb",
-        "https://inv.vern.cc"
+        "https://iv.duti.dev"
     ],
     "hyperpipe": [
         "https://nyc1.hpapi.ggtyler.dev",
         "https://cal1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
         "https://pol1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.ducks.party"
+        "https://hyperpipeapi.onrender.com",
+        "https://hyperpipeapi.ducks.party",
+        "https://hyperpipebackend.in.projectsegfau.lt"
     ],
     "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "cobalt": "https://cobalt-api.meowing.de",

@@ -16,21 +16,21 @@
         "https://lekker.gay",
         "https://invidious.reallyaweso.me",
         "https://nyc1.iv.ggtyler.dev",
-        "https://cal1.iv.ggtyler.dev",
-        "https://iv.melmac.space",
         "https://iv.ggtyler.dev",
-        "https://yt.omada.cafe"
+        "https://iv.melmac.space",
+        "https://yt.omada.cafe",
+        "https://inv.vern.cc",
+        "https://cal1.iv.ggtyler.dev"
     ],
     "hyperpipe": [
         "https://cal1.hpapi.ggtyler.dev",
         "https://nyc1.hpapi.ggtyler.dev",
-        "https://pol1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipeapi.ducks.party",
-        "https://hyperpipebackend.in.projectsegfau.lt"
+        "https://hyperpipeapi.darkness.services",
+        "https://pol1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.ducks.party"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "cobalt": "https://cobalt-api.meowing.de",
     "status": "P"
 }

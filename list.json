@@ -2,32 +2,33 @@
     "piped": [
         "https://api.piped.private.coffee",
         "https://pipedapi.ducks.party",
-        "https://pol1.piapi.ggtyler.dev",
         "https://nyc1.piapi.ggtyler.dev",
-        "https://cal1.piapi.ggtyler.dev",
-        "https://piapi.ggtyler.dev"
+        "https://piapi.ggtyler.dev",
+        "https://pol1.piapi.ggtyler.dev",
+        "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
         "https://invidious.nikkosphere.com",
         "https://yt.omada.cafe",
         "https://invidious.reallyaweso.me",
         "https://cal1.iv.ggtyler.dev",
-        "https://pol1.iv.ggtyler.dev",
         "https://nyc1.iv.ggtyler.dev",
+        "https://pol1.iv.ggtyler.dev",
         "https://iv.melmac.space",
         "https://inv.vern.cc",
-        "https://lekker.gay",
-        "https://iv.duti.dev",
         "https://iv.ggtyler.dev",
-        "https://y.com.sb"
+        "https://lekker.gay",
+        "https://y.com.sb",
+        "https://iv.duti.dev"
     ],
     "hyperpipe": [
         "https://cal1.hpapi.ggtyler.dev",
-        "https://nyc1.hpapi.ggtyler.dev",
         "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
-        "https://hyperpipeapi.ducks.party"
+        "https://hyperpipeapi.ducks.party",
+        "https://nyc1.hpapi.ggtyler.dev",
+        "https://hyperpipebackend.in.projectsegfau.lt"
     ],
     "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "cobalt": "https://cobalt-api.meowing.de",

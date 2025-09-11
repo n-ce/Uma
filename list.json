@@ -1,7 +1,10 @@
 {
     "piped": [
         "https://pipedapi.ducks.party",
-        "https://piapi.ggtyler.dev"
+        "https://pol1.piapi.ggtyler.dev",
+        "https://nyc1.piapi.ggtyler.dev",
+        "https://piapi.ggtyler.dev",
+        "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
         "https://iv.duti.dev",
@@ -20,8 +23,8 @@
     ],
     "hyperpipe": [
         "https://nyc1.hpapi.ggtyler.dev",
-        "https://cal1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.onrender.com",
+        "https://cal1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.darkness.services",
         "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.ducks.party"

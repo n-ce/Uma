@@ -2,9 +2,9 @@
     "piped": [
         "https://pipedapi.ducks.party",
         "https://api.piped.private.coffee",
-        "https://cal1.piapi.ggtyler.dev",
         "https://nyc1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
+        "https://cal1.piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev"
     ],
     "invidious": [
@@ -14,14 +14,15 @@
         "https://invidious.reallyaweso.me",
         "https://pol1.iv.ggtyler.dev",
         "https://cal1.iv.ggtyler.dev",
+        "https://nyc1.iv.ggtyler.dev",
         "https://invidious.baczek.me",
         "https://iv.melmac.space",
         "https://inv.vern.cc",
-        "https://yt.omada.cafe",
         "https://lekker.gay",
-        "https://iv.ggtyler.dev"
+        "https://yt.omada.cafe"
     ],
     "hyperpipe": [
+        "https://nyc1.hpapi.ggtyler.dev",
         "https://cal1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.onrender.com",
         "https://pol1.hpapi.ggtyler.dev",

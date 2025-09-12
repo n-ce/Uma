@@ -17,7 +17,7 @@ async function getLink(instance: string): Promise<string | undefined> {
     .then(_ => _.json())
     .then(_ => {
       if ('url' in _)
-        dl = _.url;
+        dl = instance;
       else throw new Error(_.error.code);
     })
     .catch(console.error);

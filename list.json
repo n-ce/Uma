@@ -2,10 +2,10 @@
     "piped": [
         "https://pipedapi.ducks.party",
         "https://api.piped.private.coffee",
+        "https://pol1.piapi.ggtyler.dev",
         "https://nyc1.piapi.ggtyler.dev",
-        "https://cal1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
-        "https://pol1.piapi.ggtyler.dev"
+        "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
         "https://iv.duti.dev",
@@ -13,24 +13,24 @@
         "https://invidious.nikkosphere.com",
         "https://invidious.reallyaweso.me",
         "https://nyc1.iv.ggtyler.dev",
-        "https://cal1.iv.ggtyler.dev",
         "https://pol1.iv.ggtyler.dev",
+        "https://cal1.iv.ggtyler.dev",
         "https://invidious.baczek.me",
         "https://iv.ggtyler.dev",
+        "https://iv.melmac.space",
         "https://yt.omada.cafe",
         "https://inv.vern.cc",
-        "https://iv.melmac.space",
         "https://lekker.gay"
     ],
     "hyperpipe": [
-        "https://cal1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.onrender.com",
         "https://nyc1.hpapi.ggtyler.dev",
+        "https://cal1.hpapi.ggtyler.dev",
         "https://pol1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.darkness.services",
-        "https://hyperpipeapi.ducks.party"
+        "https://hyperpipeapi.onrender.com",
+        "https://hyperpipeapi.ducks.party",
+        "https://hyperpipeapi.darkness.services"
     ],
     "jiosaavn": "https://saavn-ytify.vercel.app",
-    "cobalt": "https://cobalt-api.meowing.de",
+    "cobalt": "https://cobalt-api.kwiatekmiki.com/tunnel?id=ZZrlVSLRzII2_tVPqGKJd&exp=1757648914575&sig=JlNnrZ0gpMmMcmBFFYs8odr2T2B2pdWW4pINTPAaIYM&sec=1Hkgubk8sY6cU9AOcWbiKFE_5ruKd-9MJxewlkYfoyY&iv=pARHEEj2ETtweTCVEAnd5g",
     "status": "P"
 }

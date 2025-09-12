@@ -3,6 +3,7 @@ import { writeFileSync } from 'fs';
 import test_invidious from "./test_invidious.ts";
 import test_piped from './test_piped.ts';
 import test_hyperpipe from './test_hyperpipe.ts';
+import test_cobalt from './test_cobalt.ts';
 
 
 const jiosaavn_instances = [
@@ -76,14 +77,16 @@ test_piped()
     }
 
 
-    console.log('Initiating Hyperpipe test')
+    console.log('Initiating Hyperpipe Test...')
     const hp = await test_hyperpipe();
+    console.log('Fetching Cobalt List...')
+    const cb = await test_cobalt();
     const data = {
       piped: pi,
       invidious: iv,
       hyperpipe: hp,
       jiosaavn: jiosaavn_instances[Math.floor(Math.random() * jiosaavn_instances.length)],
-      cobalt: 'https://cobalt-api.meowing.de',
+      cobalt: cb[0] || 'https://capi.3kh0.net',
       status: shouldUsePiped ? 'P' : useIv ? 'I' : 'N'
     };
     console.log(data);

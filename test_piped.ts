@@ -86,7 +86,7 @@ async function reorderInstancesByProxyTest(instances: string[]): Promise<[string
   const audioUrls = await Promise.all(instances.map(getAudioUrl));
   const proxyResults = await Promise.all(audioUrls.map(([instance, url]) => proxyTest(instance, url)));
 
-  instances.sort((a, b) => {
+  instances = instances.sort((a, b) => {
     const aPassed = proxyResults.includes(a);
     const bPassed = proxyResults.includes(b);
 

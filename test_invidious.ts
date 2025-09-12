@@ -63,7 +63,7 @@ async function reorderByLoadTest(instances: string[]): Promise<[string[], boolea
   const audioUrls = await Promise.all(instances.map(getAudioUrl));
   const loadTestResults = await Promise.all(audioUrls.map(([instance, url]) => loadTest(instance, url)));
 
-  instances.sort((a, b) => {
+  instances = instances.sort((a, b) => {
     const aPassed = loadTestResults.includes(a);
     const bPassed = loadTestResults.includes(b);
     if (aPassed && !bPassed) return -1;

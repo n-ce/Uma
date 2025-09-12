@@ -138,8 +138,8 @@ fetch(piped_instances)
         .forEach(i => di.piped.push(i));
     }
 
-    if (!di.invidious.length)
-      iv.forEach(i => di.invidious.push(i));
+    if (di.invidious.length < 2)
+      iv.forEach(i => if (!(i in di.invidious)) di.invidious.push(i));
 
     writeFileSync(
       'dynamic_instances.json',

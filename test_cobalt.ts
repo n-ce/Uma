@@ -20,7 +20,7 @@ async function getLink(instance: string): Promise<string | undefined> {
         dl = instance;
       else throw new Error(_.error.code);
     })
-    .catch(console.error);
+    .catch(() => console.log(`failed ${instance}`));
 
   return dl;
 

@@ -1,9 +1,11 @@
 {
     "piped": [
         "https://pipedapi.ducks.party",
-        "https://api.piped.private.coffee",
         "https://nyc1.piapi.ggtyler.dev",
-        "https://pol1.piapi.ggtyler.dev"
+        "https://piapi.ggtyler.dev",
+        "https://pol1.piapi.ggtyler.dev",
+        "https://cal1.piapi.ggtyler.dev",
+        "https://api.piped.private.coffee"
     ],
     "invidious": [
         "https://iv.duti.dev",
@@ -15,18 +17,19 @@
         "https://invidious.baczek.me",
         "https://iv.melmac.space",
         "https://inv.vern.cc",
-        "https://yt.omada.cafe",
-        "https://lekker.gay"
+        "https://iv.ggtyler.dev",
+        "https://lekker.gay",
+        "https://yt.omada.cafe"
     ],
     "hyperpipe": [
         "https://nyc1.hpapi.ggtyler.dev",
-        "https://cal1.hpapi.ggtyler.dev",
-        "https://pol1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
+        "https://cal1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.darkness.services",
+        "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.ducks.party"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "status": "P"
 }

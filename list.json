@@ -10,22 +10,23 @@
     "invidious": [
         "https://invidious.nikkosphere.com",
         "https://invidious.reallyaweso.me",
+        "https://nyc1.iv.ggtyler.dev",
         "https://cal1.iv.ggtyler.dev",
         "https://pol1.iv.ggtyler.dev",
-        "https://nyc1.iv.ggtyler.dev",
         "https://invidious.baczek.me",
+        "https://iv.ggtyler.dev",
         "https://iv.melmac.space",
         "https://inv.vern.cc",
         "https://yt.omada.cafe",
         "https://lekker.gay",
         "https://iv.duti.dev",
-        "https://y.com.sb",
-        "https://iv.ggtyler.dev"
+        "https://y.com.sb"
     ],
     "hyperpipe": [
+        "https://nyc1.hpapi.ggtyler.dev",
         "https://cal1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com",
         "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"

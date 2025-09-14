@@ -2,10 +2,10 @@
     "piped": [
         "https://api.piped.private.coffee",
         "https://pipedapi.ducks.party",
-        "https://nyc1.piapi.ggtyler.dev",
-        "https://cal1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
-        "https://pol1.piapi.ggtyler.dev"
+        "https://pol1.piapi.ggtyler.dev",
+        "https://nyc1.piapi.ggtyler.dev",
+        "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
         "https://invidious.nikkosphere.com",
@@ -17,18 +17,19 @@
         "https://iv.melmac.space",
         "https://iv.ggtyler.dev",
         "https://yt.omada.cafe",
+        "https://inv.vern.cc",
         "https://iv.duti.dev",
         "https://lekker.gay",
         "https://y.com.sb"
     ],
     "hyperpipe": [
         "https://cal1.hpapi.ggtyler.dev",
-        "https://nyc1.hpapi.ggtyler.dev",
+        "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
-        "https://pol1.hpapi.ggtyler.dev",
         "https://hyperpipeapi.ducks.party",
-        "https://hyperpipebackend.in.projectsegfau.lt"
+        "https://hyperpipebackend.in.projectsegfau.lt",
+        "https://nyc1.hpapi.ggtyler.dev"
     ],
     "jiosaavn": "https://saavn-sigma.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",

@@ -15,24 +15,25 @@
     "invidious": [
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
-        "https://y.com.sb",
-        "https://iv.melmac.space",
-        "https://invidious.baczek.me",
         "https://nyc1.iv.ggtyler.dev",
-        "https://inv.vern.cc",
-        "https://lekker.gay",
         "https://cal1.iv.ggtyler.dev",
+        "https://invidious.baczek.me",
+        "https://pol1.iv.ggtyler.dev",
+        "https://inv.vern.cc",
+        "https://iv.ggtyler.dev",
+        "https://lekker.gay",
+        "https://iv.melmac.space",
         "https://yt.omada.cafe",
         "https://iv.duti.dev",
-        "https://pol1.iv.ggtyler.dev",
         "https://invidious.reallyaweso.me",
-        "https://iv.ggtyler.dev"
+        "https://y.com.sb"
     ],
     "hyperpipe": [
+        "https://nyc1.hpapi.ggtyler.dev",
         "https://cal1.hpapi.ggtyler.dev",
+        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
         "https://pol1.hpapi.ggtyler.dev",
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],

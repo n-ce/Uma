@@ -1,5 +1,7 @@
 {
-    "piped": [],
+    "piped": [
+        "https://api.piped.private.coffee"
+    ],
     "invidious": [
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
@@ -7,15 +9,15 @@
         "https://invidious.baczek.me",
         "https://iv.melmac.space",
         "https://inv.vern.cc",
-        "https://iv.duti.dev",
         "https://lekker.gay",
+        "https://iv.duti.dev",
         "https://y.com.sb"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipebackend.in.projectsegfau.lt",
-        "https://hyperpipeapi.ducks.party"
+        "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.ducks.party",
+        "https://hyperpipebackend.in.projectsegfau.lt"
     ],
     "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",

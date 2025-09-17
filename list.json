@@ -1,7 +1,5 @@
 {
-    "piped": [
-        "https://api.piped.private.coffee"
-    ],
+    "piped": [],
     "invidious": [
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
@@ -10,7 +8,8 @@
         "https://iv.melmac.space",
         "https://inv.vern.cc",
         "https://iv.duti.dev",
-        "https://lekker.gay"
+        "https://lekker.gay",
+        "https://y.com.sb"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",

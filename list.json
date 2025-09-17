@@ -4,10 +4,8 @@
         "https://pipedapi.ducks.party"
     ],
     "invidious": [
-        "https://invidious.reallyaweso.me",
         "https://invidious.nikkosphere.com",
-        "https://invidious.baczek.me",
-        "https://iv.melmac.space"
+        "https://invidious.reallyaweso.me"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",

@@ -11,12 +11,12 @@
         "https://invidious.baczek.me",
         "https://iv.melmac.space",
         "https://inv.vern.cc",
-        "https://y.com.sb",
-        "https://lekker.gay"
+        "https://lekker.gay",
+        "https://y.com.sb"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],

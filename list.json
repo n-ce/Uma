@@ -5,22 +5,22 @@
     ],
     "invidious": [
         "https://iv.duti.dev",
-        "https://invidious.baczek.me",
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
         "https://invidious.reallyaweso.me",
+        "https://invidious.baczek.me",
         "https://iv.melmac.space",
-        "https://inv.vern.cc",
         "https://lekker.gay",
-        "https://y.com.sb"
+        "https://y.com.sb",
+        "https://inv.vern.cc"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "status": "P"
 }

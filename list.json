@@ -1,7 +1,6 @@
 {
     "piped": [
-        "https://pipedapi.ducks.party",
-        "https://api.piped.private.coffee"
+        "https://pipedapi.ducks.party"
     ],
     "invidious": [
         "https://iv.duti.dev",
@@ -15,12 +14,12 @@
         "https://y.com.sb"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.ducks.party",
-        "https://hyperpipebackend.in.projectsegfau.lt"
+        "https://hyperpipebackend.in.projectsegfau.lt",
+        "https://hyperpipeapi.darkness.services"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "status": "P"
 }

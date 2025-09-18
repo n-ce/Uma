@@ -1,6 +1,7 @@
 {
     "piped": [
-        "https://pipedapi.ducks.party"
+        "https://pipedapi.ducks.party",
+        "https://api.piped.private.coffee"
     ],
     "invidious": [
         "https://iv.duti.dev",
@@ -9,7 +10,7 @@
         "https://invidious.reallyaweso.me",
         "https://invidious.baczek.me",
         "https://iv.melmac.space",
-        "https://inv.vern.cc"
+        "https://lekker.gay"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",

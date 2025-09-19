@@ -13,17 +13,17 @@
         "https://invidious.reallyaweso.me",
         "https://y.com.sb",
         "https://invidious.baczek.me",
-        "https://iv.melmac.space",
         "https://inv.vern.cc",
         "https://lekker.gay",
         "https://iv.duti.dev",
+        "https://iv.melmac.space",
         "https://yt.omada.cafe"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipebackend.in.projectsegfau.lt",
-        "https://hyperpipeapi.ducks.party"
+        "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.ducks.party",
+        "https://hyperpipebackend.in.projectsegfau.lt"
     ],
     "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "health": "P"

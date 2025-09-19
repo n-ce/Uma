@@ -7,14 +7,14 @@
     "proxy": [],
     "invidious": [
         "https://yt.omada.cafe",
+        "https://invidious.reallyaweso.me",
         "https://invidious.nikkosphere.com",
         "https://y.com.sb",
-        "https://invidious.reallyaweso.me",
-        "https://invidious.baczek.me",
-        "https://lekker.gay",
         "https://inv.vern.cc",
         "https://iv.melmac.space",
         "https://iv.duti.dev",
+        "https://lekker.gay",
+        "https://invidious.baczek.me",
         "https://yt.omada.cafe"
     ],
     "hyperpipe": [
@@ -23,6 +23,6 @@
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "health": "I"
 }

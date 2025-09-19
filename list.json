@@ -8,18 +8,19 @@
         "https://invidious.nikkosphere.com",
         "https://invidious.reallyaweso.me",
         "https://invidious.baczek.me",
-        "https://iv.melmac.space",
         "https://inv.vern.cc",
+        "https://iv.melmac.space",
+        "https://lekker.gay",
         "https://iv.duti.dev",
         "https://y.com.sb"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "status": "I"
 }

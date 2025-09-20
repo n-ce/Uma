@@ -11,15 +11,16 @@
         "https://iv.melmac.space",
         "https://inv.vern.cc",
         "https://iv.duti.dev",
-        "https://lekker.gay"
+        "https://lekker.gay",
+        "https://y.com.sb"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
+        "https://hyperpipeapi.darkness.services",
         "https://hyperpipebackend.in.projectsegfau.lt",
         "https://hyperpipeapi.ducks.party"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "status": "I"
 }

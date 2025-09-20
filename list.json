@@ -4,7 +4,6 @@
         "https://pipedapi.ducks.party"
     ],
     "invidious": [
-        "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
         "https://invidious.reallyaweso.me",
         "https://invidious.baczek.me",
@@ -15,8 +14,8 @@
         "https://iv.duti.dev"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],

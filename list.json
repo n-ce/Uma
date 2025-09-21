@@ -4,17 +4,17 @@
         "https://pipedapi.ducks.party"
     ],
     "invidious": [
-        "https://invidious.baczek.me",
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
         "https://invidious.reallyaweso.me",
+        "https://invidious.baczek.me",
         "https://iv.melmac.space",
+        "https://inv.vern.cc",
         "https://iv.duti.dev",
         "https://lekker.gay",
-        "https://y.com.sb",
-        "https://inv.vern.cc"
+        "https://y.com.sb"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "status": "I"
 }

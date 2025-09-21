@@ -9,12 +9,12 @@
         "https://invidious.reallyaweso.me",
         "https://invidious.baczek.me",
         "https://iv.melmac.space",
-        "https://inv.vern.cc",
-        "https://iv.duti.dev",
         "https://lekker.gay",
-        "https://y.com.sb"
+        "https://iv.duti.dev",
+        "https://y.com.sb",
+        "https://inv.vern.cc"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "status": "I"
 }

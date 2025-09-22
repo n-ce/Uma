@@ -1,7 +1,7 @@
 {
     "piped": [
-        "https://api.piped.private.coffee",
-        "https://pipedapi.ducks.party"
+        "https://pipedapi.ducks.party",
+        "https://api.piped.private.coffee"
     ],
     "invidious": [
         "https://yt.omada.cafe",
@@ -10,11 +10,11 @@
         "https://invidious.baczek.me",
         "https://iv.melmac.space",
         "https://inv.vern.cc",
-        "https://lekker.gay",
         "https://iv.duti.dev",
+        "https://lekker.gay",
         "https://y.com.sb"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "status": "I"
 }

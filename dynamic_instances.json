@@ -1,30 +1,22 @@
 {
     "piped": [
-        "https://pipedapi.ducks.party",
-        "https://api.piped.private.coffee"
+        "https://api.piped.private.coffee",
+        "https://pipedapi.ducks.party"
     ],
     "hls": [],
     "proxy": [
         "https://api.piped.private.coffee"
     ],
     "invidious": [
-        "https://yt.omada.cafe",
-        "https://invidious.nikkosphere.com",
-        "https://y.com.sb",
-        "https://lekker.gay",
-        "https://inv.vern.cc",
         "https://invidious.baczek.me",
-        "https://yt.omada.cafe",
-        "https://iv.duti.dev",
-        "https://invidious.reallyaweso.me",
-        "https://iv.melmac.space"
+        "https://yt.omada.cafe"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipebackend.in.projectsegfau.lt",
-        "https://hyperpipeapi.ducks.party"
+        "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.ducks.party",
+        "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "P"
 }

@@ -7,13 +7,13 @@
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
         "https://invidious.reallyaweso.me",
-        "https://inv.vern.cc",
         "https://iv.melmac.space",
         "https://iv.duti.dev",
         "https://lekker.gay",
-        "https://y.com.sb"
+        "https://y.com.sb",
+        "https://inv.vern.cc"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "status": "I"
 }

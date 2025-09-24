@@ -10,19 +10,19 @@
     "invidious": [
         "https://invidious.reallyaweso.me",
         "https://invidious.nikkosphere.com",
-        "https://y.com.sb",
-        "https://lekker.gay",
         "https://iv.duti.dev",
         "https://iv.melmac.space",
+        "https://lekker.gay",
+        "https://inv.vern.cc",
         "https://yt.omada.cafe",
-        "https://inv.vern.cc"
+        "https://y.com.sb"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
+        "https://hyperpipeapi.darkness.services",
         "https://hyperpipebackend.in.projectsegfau.lt",
         "https://hyperpipeapi.ducks.party"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "P"
 }

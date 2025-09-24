@@ -3,16 +3,16 @@
         "https://api.piped.private.coffee"
     ],
     "invidious": [
-        "https://invidious.nikkosphere.com",
         "https://invidious.reallyaweso.me",
+        "https://invidious.nikkosphere.com",
         "https://iv.melmac.space",
-        "https://inv.vern.cc",
-        "https://iv.duti.dev",
         "https://yt.omada.cafe",
+        "https://inv.vern.cc",
         "https://lekker.gay",
-        "https://y.com.sb"
+        "https://y.com.sb",
+        "https://iv.duti.dev"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "status": "I"
 }

@@ -1,5 +1,6 @@
 {
     "piped": [
+        "https://pipedapi.ducks.party",
         "https://api.piped.private.coffee"
     ],
     "invidious": [

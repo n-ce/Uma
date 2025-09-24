@@ -5,13 +5,13 @@
     "invidious": [
         "https://invidious.nikkosphere.com",
         "https://invidious.reallyaweso.me",
-        "https://inv.vern.cc",
         "https://yt.omada.cafe",
+        "https://iv.duti.dev",
         "https://lekker.gay",
         "https://y.com.sb",
-        "https://iv.duti.dev"
+        "https://inv.vern.cc"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "status": "I"
 }

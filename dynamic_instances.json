@@ -11,18 +11,18 @@
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
         "https://y.com.sb",
-        "https://invidious.reallyaweso.me",
         "https://iv.melmac.space",
         "https://inv.vern.cc",
+        "https://lekker.gay",
+        "https://invidious.reallyaweso.me",
         "https://iv.duti.dev",
-        "https://yt.omada.cafe",
-        "https://lekker.gay"
+        "https://yt.omada.cafe"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipeapi.ducks.party",
-        "https://hyperpipebackend.in.projectsegfau.lt"
+        "https://hyperpipebackend.in.projectsegfau.lt",
+        "https://hyperpipeapi.ducks.party"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "P"
 }

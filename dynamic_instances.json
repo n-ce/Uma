@@ -1,7 +1,7 @@
 {
     "piped": [
-        "https://pipedapi.ducks.party",
-        "https://api.piped.private.coffee"
+        "https://api.piped.private.coffee",
+        "https://pipedapi.ducks.party"
     ],
     "hls": [],
     "proxy": [
@@ -12,10 +12,10 @@
         "https://invidious.nikkosphere.com",
         "https://invidious.reallyaweso.me",
         "https://y.com.sb",
-        "https://iv.melmac.space",
         "https://inv.vern.cc",
-        "https://iv.duti.dev",
         "https://lekker.gay",
+        "https://iv.duti.dev",
+        "https://iv.melmac.space",
         "https://yt.omada.cafe"
     ],
     "hyperpipe": [

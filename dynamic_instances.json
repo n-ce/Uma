@@ -12,9 +12,9 @@
         "https://invidious.nikkosphere.com",
         "https://y.com.sb",
         "https://iv.melmac.space",
+        "https://yt.omada.cafe",
         "https://lekker.gay",
         "https://iv.duti.dev",
-        "https://yt.omada.cafe",
         "https://invidious.reallyaweso.me",
         "https://inv.vern.cc"
     ],
@@ -23,6 +23,6 @@
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "health": "P"
 }

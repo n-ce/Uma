@@ -4,14 +4,14 @@
     ],
     "invidious": [
         "https://yt.omada.cafe",
-        "https://invidious.reallyaweso.me",
         "https://invidious.nikkosphere.com",
-        "https://inv.vern.cc",
+        "https://invidious.reallyaweso.me",
         "https://iv.melmac.space",
         "https://lekker.gay",
+        "https://inv.vern.cc",
         "https://y.com.sb"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "status": "I"
 }

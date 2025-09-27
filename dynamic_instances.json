@@ -10,10 +10,10 @@
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
         "https://invidious.reallyaweso.me",
-        "https://y.com.sb",
-        "https://lekker.gay",
         "https://inv.vern.cc",
         "https://iv.melmac.space",
+        "https://y.com.sb",
+        "https://lekker.gay",
         "https://yt.omada.cafe"
     ],
     "hyperpipe": [
@@ -21,6 +21,6 @@
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "health": "P"
 }

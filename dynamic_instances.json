@@ -9,12 +9,11 @@
     "invidious": [
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
-        "https://invidious.reallyaweso.me",
-        "https://inv.vern.cc",
-        "https://lekker.gay",
-        "https://yt.omada.cafe",
+        "https://y.com.sb",
         "https://iv.melmac.space",
-        "https://y.com.sb"
+        "https://inv.vern.cc",
+        "https://yt.omada.cafe",
+        "https://invidious.reallyaweso.me"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",
@@ -22,6 +21,6 @@
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "P"
 }

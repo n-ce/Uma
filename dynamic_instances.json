@@ -9,15 +9,15 @@
     "invidious": [
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
-        "https://y.com.sb",
-        "https://iv.melmac.space",
         "https://invidious.reallyaweso.me",
+        "https://y.com.sb",
         "https://inv.vern.cc",
-        "https://yt.omada.cafe"
+        "https://yt.omada.cafe",
+        "https://iv.melmac.space"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],

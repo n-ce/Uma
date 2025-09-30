@@ -1,5 +1,6 @@
 {
     "piped": [
+        "https://pipedapi.drgns.space",
         "https://api.piped.private.coffee"
     ],
     "hls": [],
@@ -9,17 +10,15 @@
     "invidious": [
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
-        "https://y.com.sb",
-        "https://inv.vern.cc",
+        "https://invidious.reallyaweso.me",
         "https://iv.melmac.space",
         "https://yt.omada.cafe",
-        "https://invidious.reallyaweso.me"
+        "https://inv.vern.cc"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.ducks.party",
-        "https://hyperpipebackend.in.projectsegfau.lt"
+        "https://hyperpipeapi.darkness.services"
     ],
     "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "P"

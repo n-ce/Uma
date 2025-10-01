@@ -1,17 +1,17 @@
 {
     "piped": [
-        "https://pipedapi.drgns.space",
-        "https://api.piped.private.coffee"
+        "https://api.piped.private.coffee",
+        "https://pipedapi.drgns.space"
     ],
     "invidious": [
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
+        "https://y.com.sb",
         "https://invidious.reallyaweso.me",
         "https://iv.melmac.space",
-        "https://y.com.sb",
         "https://inv.vern.cc"
     ],
     "jiosaavn": "https://saavn-ytify.vercel.app",
     "cobalt": "https://capi.3kh0.net",
-    "status": "I"
+    "status": "P"
 }

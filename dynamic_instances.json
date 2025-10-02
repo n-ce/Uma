@@ -7,7 +7,6 @@
     "invidious": [
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
-        "https://y.com.sb",
         "https://iv.melmac.space",
         "https://inv.vern.cc",
         "https://yt.omada.cafe",
@@ -19,6 +18,6 @@
         "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "I"
 }

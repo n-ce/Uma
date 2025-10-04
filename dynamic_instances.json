@@ -17,10 +17,10 @@
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipeapi.ducks.party",
         "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "P"
 }

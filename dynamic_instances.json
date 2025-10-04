@@ -9,16 +9,16 @@
     "invidious": [
         "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
-        "https://inv.vern.cc",
-        "https://yt.omada.cafe",
         "https://y.com.sb",
         "https://iv.melmac.space",
+        "https://inv.vern.cc",
+        "https://yt.omada.cafe",
         "https://invidious.reallyaweso.me"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.ducks.party",
+        "https://hyperpipeapi.darkness.services",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
     "jiosaavn": "https://jiosavan-ytify.vercel.app",

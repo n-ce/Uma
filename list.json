@@ -4,9 +4,11 @@
     ],
     "invidious": [
         "https://invidious.nikkosphere.com",
+        "https://yt.omada.cafe",
         "https://inv.perditum.com",
         "https://invidious.reallyaweso.me",
-        "https://iv.melmac.space"
+        "https://iv.melmac.space",
+        "https://inv.vern.cc"
     ],
     "jiosaavn": "https://saavn-ytify.vercel.app",
     "cobalt": "https://capi.3kh0.net",

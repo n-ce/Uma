@@ -4,12 +4,14 @@
     ],
     "invidious": [
         "https://invidious.nikkosphere.com",
-        "https://inv.perditum.com",
         "https://yt.omada.cafe",
         "https://invidious.reallyaweso.me",
-        "https://iv.melmac.space"
+        "https://inv.perditum.com",
+        "https://iv.melmac.space",
+        "https://inv.vern.cc",
+        "https://y.com.sb"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "cobalt": "https://capi.3kh0.net",
-    "status": "P"
+    "status": "I"
 }

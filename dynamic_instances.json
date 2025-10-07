@@ -7,12 +7,7 @@
         "https://api.piped.private.coffee"
     ],
     "invidious": [
-        "https://yt.omada.cafe",
-        "https://invidious.reallyaweso.me",
         "https://invidious.nikkosphere.com",
-        "https://y.com.sb",
-        "https://iv.melmac.space",
-        "https://inv.vern.cc",
         "https://yt.omada.cafe"
     ],
     "hyperpipe": [
@@ -21,6 +16,6 @@
         "https://hyperpipebackend.in.projectsegfau.lt",
         "https://hyperpipeapi.darkness.services"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "P"
 }

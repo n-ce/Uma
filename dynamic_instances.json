@@ -3,9 +3,7 @@
         "https://api.piped.private.coffee"
     ],
     "hls": [],
-    "proxy": [
-        "https://api.piped.private.coffee"
-    ],
+    "proxy": [],
     "invidious": [
         "https://invidious.nikkosphere.com",
         "https://yt.omada.cafe"
@@ -16,6 +14,6 @@
         "https://hyperpipebackend.in.projectsegfau.lt",
         "https://hyperpipeapi.darkness.services"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
-    "health": "P"
+    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "health": "I"
 }

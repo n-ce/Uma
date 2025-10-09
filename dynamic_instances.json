@@ -7,17 +7,13 @@
         "https://api.piped.private.coffee"
     ],
     "invidious": [
-        "https://yt.omada.cafe",
         "https://invidious.nikkosphere.com",
-        "https://inv.vern.cc",
-        "https://yt.omada.cafe",
-        "https://invidious.reallyaweso.me",
-        "https://y.com.sb"
+        "https://yt.omada.cafe"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipeapi.ducks.party"
+        "https://hyperpipeapi.ducks.party",
+        "https://hyperpipeapi.darkness.services"
     ],
     "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "health": "P"

@@ -15,10 +15,10 @@
         "https://yt.omada.cafe"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.ducks.party",
         "https://hyperpipeapi.onrender.com",
+        "https://hyperpipeapi.ducks.party",
         "https://hyperpipeapi.darkness.services"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "health": "P"
 }

@@ -3,11 +3,14 @@
         "https://api.piped.private.coffee"
     ],
     "invidious": [
-        "https://invidious.tail5b365.ts.net",
         "https://invidious.nikkosphere.com",
+        "https://invidious.tail5b365.ts.net",
         "https://inv.perditum.com",
+        "https://yt.omada.cafe",
         "https://zoomerville.com",
-        "https://invidious.reallyaweso.me"
+        "https://y.com.sb",
+        "https://invidious.reallyaweso.me",
+        "https://inv.vern.cc"
     ],
     "cobalt": "",
     "status": "P"

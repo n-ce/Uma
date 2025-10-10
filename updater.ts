@@ -5,13 +5,6 @@ import test_piped from './test_piped.ts';
 // import test_hyperpipe from './test_hyperpipe.ts';
 import test_cobalt from './test_cobalt.ts';
 
-
-const jiosaavn_instances = [
-  'https://saavn-sigma.vercel.app',
-  'https://saavn-ytify.vercel.app',
-  'https://jiosavan-ytify.vercel.app'
-];
-
 async function ivProxyTest(instance: string, arr: [string, string]) {
   const [piIns, url] = arr;
   const _url = new URL(url);
@@ -84,9 +77,7 @@ test_piped()
     const data = {
       piped: pi,
       invidious: iv,
-      // hyperpipe: hp,
-      jiosaavn: jiosaavn_instances[Math.floor(Math.random() * jiosaavn_instances.length)],
-      cobalt: cb[0] || 'https://capi.3kh0.net',
+      cobalt: cb[0] || '',
       status: shouldUsePiped ? 'P' : useIv ? 'I' : 'N'
     };
     console.log(data);

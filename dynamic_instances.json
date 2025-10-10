@@ -11,13 +11,13 @@
         "https://invidious.nikkosphere.com",
         "https://y.com.sb",
         "https://inv.vern.cc",
-        "https://invidious.reallyaweso.me",
-        "https://yt.omada.cafe"
+        "https://yt.omada.cafe",
+        "https://invidious.reallyaweso.me"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
+        "https://hyperpipeapi.ducks.party",
         "https://hyperpipeapi.darkness.services",
-        "https://hyperpipeapi.ducks.party"
+        "https://hyperpipeapi.onrender.com"
     ],
     "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "P"

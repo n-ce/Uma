@@ -72,14 +72,15 @@ test_piped()
 
     // console.log('Initiating Hyperpipe Test...')
     // const hp = await test_hyperpipe();
+    
+    const data = { pi, iv };
+    //  status: shouldUsePiped ? 'P' : useIv ? 'I' : 'N'
+    
     console.log('Fetching Cobalt List...')
     const cb = await test_cobalt();
-    const data = {
-      piped: pi,
-      invidious: iv,
-      cobalt: cb[0] || '',
-      status: shouldUsePiped ? 'P' : useIv ? 'I' : 'N'
-    };
+    if (cb.length)
+      data.cb = cb[0];
+    
     console.log(data);
     writeFileSync('list.json', JSON.stringify(data, null, 4));
   });

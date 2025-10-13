@@ -9,14 +9,14 @@
         "https://invidious.nikkosphere.com",
         "https://inv.vern.cc",
         "https://y.com.sb",
-        "https://iv.melmac.space",
         "https://yt.omada.cafe",
+        "https://iv.melmac.space",
         "https://invidious.reallyaweso.me"
     ],
     "hyperpipe": [
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.ducks.party",
-        "https://hyperpipeapi.onrender.com",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
     "jiosaavn": "https://jiosavan-ytify.vercel.app",

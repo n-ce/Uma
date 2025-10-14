@@ -73,7 +73,7 @@ test_piped()
     // console.log('Initiating Hyperpipe Test...')
     // const hp = await test_hyperpipe();
     
-    const data = iv.map(i => i.slice(8)).split(',');
+    const data = iv.map(i => i.slice(8)).join(',');
     //  status: shouldUsePiped ? 'P' : useIv ? 'I' : 'N'
     /*
     console.log('Fetching Cobalt List...')

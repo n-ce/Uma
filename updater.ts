@@ -4,7 +4,7 @@ import test_invidious from "./test_invidious.ts";
 import test_piped from './test_piped.ts';
 // import test_hyperpipe from './test_hyperpipe.ts';
 import test_cobalt from './test_cobalt.ts';
-import encoder1 from './encoder1.ts';
+import encoder2 from './encoder2.ts';
 
 async function ivProxyTest(instance: string, arr: [string, string]) {
   const [piIns, url] = arr;
@@ -83,7 +83,7 @@ test_piped()
       data.cb = cb[0];
     */
     console.log(data);
-    writeFileSync('iv.txt', encoder1(data));
+    writeFileSync('iv.txt', encoder2(data));
   });
 
 

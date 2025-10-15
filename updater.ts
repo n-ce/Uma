@@ -83,7 +83,7 @@ test_piped()
       data.cb = cb[0];
     */
     console.log(data);
-    writeFileSync('iv.txt', encoder2(data));
+    writeFileSync('iv.txt', encoder2(data).compressedString);
   });
 
 

@@ -47,11 +47,14 @@ async function loadTest(i: string, url: string): Promise<string | null> {
   const curl = new URL(url);
   const origin = curl.origin;
   const proxiedUrl = url.replace(origin, i) + '&host=' + origin.slice(8);
-  console.log(proxiedUrl);
+  
   const passed = await fetch(proxiedUrl)
     .then(res => res.status === 200)
     .catch(() => false);
-
+  
+  if (passed)
+    console.log(i, ' :Passed proxy test');
+  
   return passed ? i : '';
 }
 

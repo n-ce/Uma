@@ -6,14 +6,18 @@
     "proxy": [],
     "invidious": [
         "https://invidious.nikkosphere.com",
-        "https://yt.omada.cafe"
+        "https://invidious.nikkosphere.com",
+        "https://inv.vern.cc",
+        "https://yt.omada.cafe",
+        "https://iv.melmac.space",
+        "https://y.com.sb"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.ducks.party",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.ducks.party",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "I"
 }

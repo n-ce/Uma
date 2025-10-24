@@ -13,10 +13,10 @@
         "https://y.com.sb"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipeapi.ducks.party"
+        "https://hyperpipeapi.ducks.party",
+        "https://hyperpipeapi.darkness.services"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "health": "I"
 }

@@ -1,11 +1,12 @@
 // @ts-ignore
 import { writeFileSync } from 'fs';
 import test_invidious from "./test_invidious.ts";
-import test_piped from './test_piped.ts';
+// import test_piped from './test_piped.ts';
 // import test_hyperpipe from './test_hyperpipe.ts';
-import test_cobalt from './test_cobalt.ts';
+// import test_cobalt from './test_cobalt.ts';
 import encoder2 from './encoder2.ts';
 
+/*
 async function ivProxyTest(instance: string, arr: [string, string]) {
   const [piIns, url] = arr;
   const _url = new URL(url);
@@ -38,43 +39,40 @@ async function reorderByIvProxyTest(iv: string[], audioUrls: [string, string][])
 
   return results.length ? [iv, piS] : [];
 }
+*/
 
-
-test_piped()
+test_invidious()
   .then(async res => {
-    const [pi, usePiped, audioUrls] = res;
-    const [iv, useIv] = await test_invidious();
 
+    // let shouldUsePiped = false;
 
-    let shouldUsePiped = false;
+    // if (usePiped) {
+    //   console.log('Piped is able to achieve playback, reordering invidious by proxying capability');
+    //   const ordered = await reorderByIvProxyTest(iv, audioUrls);
 
-    if (usePiped) {
-      console.log('Piped is able to achieve playback, reordering invidious by proxying capability');
-      const ordered = await reorderByIvProxyTest(iv, audioUrls);
+    //   console.log(ordered);
 
-      console.log(ordered);
+    //   if (ordered.length) {
+    //     const [orderedIv, orderedPi] = ordered;
+    //     if (orderedPi.length) {
+    //       orderedPi.forEach(e => {
+    //         moveElementToFront(pi, e);
+    //       });
+    //       shouldUsePiped = true;
 
-      if (ordered.length) {
-        const [orderedIv, orderedPi] = ordered;
-        if (orderedPi.length) {
-          orderedPi.forEach(e => {
-            moveElementToFront(pi, e);
-          });
-          shouldUsePiped = true;
+    //       if (orderedIv.length)
+    //         iv.splice(0, iv.length, ...orderedIv);
+    //     }
 
-          if (orderedIv.length)
-            iv.splice(0, iv.length, ...orderedIv);
-        }
+    //   }
 
-      }
-
-    }
+    // }
 
 
     // console.log('Initiating Hyperpipe Test...')
     // const hp = await test_hyperpipe();
-    
-    const data = iv.map(i => i.slice(8)).join(',');
+
+    const data = res.map((i: string) => i.slice(8)).join(',');
     //  status: shouldUsePiped ? 'P' : useIv ? 'I' : 'N'
     /*
     console.log('Fetching Cobalt List...')

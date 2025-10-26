@@ -2,13 +2,13 @@
 import { readFile } from 'fs/promises';
 
 
-async function getSuggestions(i: string): Promise<[number, string]> {
+async function getMixesTest(i: string): Promise<[number, string]> {
   const t = performance.now();
 
-  return fetch(i + '/api/v1/search/suggestions?q=time')
+  return fetch(`${i}/api/v1/mixes/RDGemKqzILV4w`)
     .then(_ => _.json())
     .then(data => {
-      if (data?.suggestions?.length) {
+      if (data?.videos?.length) {
         const score = Math.floor(1e5 / (performance.now() - t));
         return [score, i] as [number, string];
       } else throw new Error();
@@ -16,10 +16,10 @@ async function getSuggestions(i: string): Promise<[number, string]> {
     .catch(() => [0, i]);
 }
 
-const getLivingInstances = (instanceArray: string[]): Promise<string[]> => Promise.all(instanceArray.map(getSuggestions)).then(array =>
+const getLivingInstances = (instanceArray: string[]): Promise<string[]> => Promise.all(instanceArray.map(getMixesTest)).then(array =>
   array
-    .sort((a, b) => b[0] - a[0])
     .filter((i) => i[0])
+    .sort((a, b) => b[0] - a[0])
     .map(i => i[1] as string)
 );
 
@@ -42,39 +42,52 @@ async function getAudioUrl(instance: string): Promise<[string, string]> {
 
 async function loadTest(i: string, url: string): Promise<string | null> {
 
-  if (!url) return '';
+  if (!url) {
+    console.log(`loadTest: ${i} - Skipped (no audio URL)`);
+    return '';
+  }
 
   const curl = new URL(url);
   const origin = curl.origin;
   const proxiedUrl = url.replace(origin, i) + '&host=' + origin.slice(8);
-  
+
   const passed = await fetch(proxiedUrl)
     .then(res => res.status === 200)
     .catch(() => false);
-  
-  if (passed)
-    console.log(i, ' :Passed proxy test');
-  
+
+  console.log(`loadTest: ${i} - ${passed ? 'passed' : 'failed'} proxy test`);
+
   return passed ? i : '';
 }
 
 
 
 
-async function reorderByLoadTest(instances: string[]): Promise<[string[], boolean, string[]]> {
+async function reorderByLoadTest(instances: string[]): Promise<string[]> {
   console.log('Initiating load test to reorder instances...');
+  console.log(instances);
   const audioUrls = await Promise.all(instances.map(getAudioUrl));
   const loadTestResults = await Promise.all(audioUrls.map(([instance, url]) => loadTest(instance, url)));
 
+
   instances = instances.sort((a, b) => {
-    const aPassed = loadTestResults.includes(a);
-    const bPassed = loadTestResults.includes(b);
-    if (aPassed && !bPassed) return -1;
-    if (!aPassed && bPassed) return 1;
+    const aLoadTestPassed = loadTestResults.includes(a);
+    const bLoadTestPassed = loadTestResults.includes(b);
+
+    // Prioritize instances that passed loadTest
+    if (aLoadTestPassed && !bLoadTestPassed) return -1;
+    if (!aLoadTestPassed && bLoadTestPassed) return 1;
+
+    const aAudioUrl = audioUrls.find(([inst]) => inst === a)?.[1];
+    const bAudioUrl = audioUrls.find(([inst]) => inst === b)?.[1];
+
+    // Then prioritize instances that have a valid audioUrl
+    if (!!aAudioUrl && !bAudioUrl) return -1;
+    if (!aAudioUrl && !!bAudioUrl) return 1;
+
     return 0;
   });
-
-  return [instances, loadTestResults.length > 0, audioUrls.map(v => v[1]).filter(v => v)];
+  return instances;
 }
 
 export default async function() {

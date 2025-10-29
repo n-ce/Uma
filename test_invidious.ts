@@ -82,8 +82,8 @@ async function reorderByLoadTest(instances: string[]): Promise<string[]> {
     const bAudioUrl = audioUrls.find(([inst]) => inst === b)?.[1];
 
     // Then prioritize instances that have a valid audioUrl
-    if (!!aAudioUrl && !bAudioUrl) return -1;
-    if (!aAudioUrl && !!bAudioUrl) return 1;
+    if (aAudioUrl && !bAudioUrl) return -1;
+    if (!aAudioUrl && bAudioUrl) return 1;
 
     return 0;
   });

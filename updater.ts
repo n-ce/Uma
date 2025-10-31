@@ -72,7 +72,7 @@ test_invidious()
     // console.log('Initiating Hyperpipe Test...')
     // const hp = await test_hyperpipe();
 
-    const data = res.map((i: string) => i.slice(8)).join(',');
+    const data = res.map((i: string) => i.slice(8));
     //  status: shouldUsePiped ? 'P' : useIv ? 'I' : 'N'
     /*
     console.log('Fetching Cobalt List...')
@@ -82,7 +82,7 @@ test_invidious()
     */
     console.log(data);
     if (data.length > 2)
-      writeFileSync('iv.txt', encoder2(data).compressedString);
+      writeFileSync('iv.txt', encoder2(data.join(',')).compressedString);
   });
 
 

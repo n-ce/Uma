@@ -7,12 +7,12 @@
     "invidious": [
         "https://invidious.nikkosphere.com",
         "https://y.com.sb",
-        "https://inv.vern.cc",
-        "https://iv.melmac.space",
-        "https://zoomerville.com",
         "https://invidious.nikkosphere.com",
-        "https://invidious.materialio.us",
-        "https://inv.perditum.com"
+        "https://inv.vern.cc",
+        "https://zoomerville.com",
+        "https://iv.melmac.space",
+        "https://inv.perditum.com",
+        "https://invidious.materialio.us"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",

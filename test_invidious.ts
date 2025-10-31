@@ -1,10 +1,11 @@
 // @ts-ignore
 import { readFile } from 'fs/promises';
 
-
+let j = 0;
 async function getMixesTest(i: string): Promise<[number, string]> {
   const t = performance.now();
-
+  j++;
+  console.log(j,' ',i);
   return fetch(`${i}/api/v1/mixes/RDGemKqzILV4w`)
     .then(_ => _.json())
     .then(data => {

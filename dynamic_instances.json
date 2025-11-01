@@ -5,8 +5,8 @@
     "hls": [],
     "proxy": [],
     "invidious": [
-        "https://yt.omada.cafe",
-        "https://invidious.nikkosphere.com"
+        "https://invidious.nikkosphere.com",
+        "https://yt.omada.cafe"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",

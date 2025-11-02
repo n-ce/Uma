@@ -1,23 +1,25 @@
 {
-    "piped": [],
+    "piped": [
+        "https://api.piped.private.coffee"
+    ],
     "hls": [],
     "proxy": [],
     "invidious": [
-        "https://invidious.nikkosphere.com",
         "https://y.com.sb",
-        "https://invidious.materialio.us",
-        "https://inv.vern.cc",
         "https://iv.melmac.space",
+        "https://inv.perditum.com",
         "https://zoomerville.com",
-        "https://yt.omada.cafe",
-        "https://inv.perditum.com"
+        "https://inv.vern.cc",
+        "https://invidious.materialio.us",
+        "https://invidious.nikkosphere.com",
+        "https://yt.omada.cafe"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipebackend.eu.projectsegfau.lt",
+        "https://hyperpipeapi.darkness.services",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "N"
 }

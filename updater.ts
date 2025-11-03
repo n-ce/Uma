@@ -81,8 +81,8 @@ test_invidious()
       data.cb = cb[0];
     */
     console.log(data);
-    if (data.length > 2)
-      writeFileSync('iv.txt', encoder2(data.join(',')).compressedString);
+    
+    writeFileSync('iv.txt', encoder2(data.join(',')).compressedString);
   });
 
 

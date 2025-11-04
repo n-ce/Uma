@@ -9,11 +9,11 @@
         "https://invidious.nikkosphere.com"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipebackend.eu.projectsegfau.lt",
-        "https://hyperpipebackend.in.projectsegfau.lt"
+        "https://hyperpipeapi.darkness.services",
+        "https://hyperpipebackend.in.projectsegfau.lt",
+        "https://hyperpipebackend.eu.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "I"
 }

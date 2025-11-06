@@ -7,18 +7,18 @@
     "invidious": [
         "https://invidious.nikkosphere.com",
         "https://y.com.sb",
-        "https://inv.vern.cc",
         "https://invidious.materialio.us",
+        "https://invidious.nikkosphere.com",
+        "https://inv.vern.cc",
         "https://iv.melmac.space",
-        "https://inv.perditum.com",
         "https://zoomerville.com",
-        "https://invidious.nikkosphere.com"
+        "https://inv.perditum.com"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
         "https://hyperpipebackend.eu.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "health": "I"
 }

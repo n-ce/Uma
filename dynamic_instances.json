@@ -6,12 +6,12 @@
     "proxy": [],
     "invidious": [
         "https://invidious.nikkosphere.com",
-        "https://invidious.nikkosphere.com",
         "https://y.com.sb",
-        "https://iv.melmac.space",
-        "https://zoomerville.com",
         "https://inv.vern.cc",
         "https://invidious.materialio.us",
+        "https://iv.melmac.space",
+        "https://zoomerville.com",
+        "https://invidious.nikkosphere.com",
         "https://inv.perditum.com"
     ],
     "hyperpipe": [

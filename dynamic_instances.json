@@ -5,15 +5,16 @@
     "hls": [],
     "proxy": [],
     "invidious": [
+        "https://invidious.nikkosphere.com",
         "https://inv.perditum.com",
-        "https://invidious.nikkosphere.com"
+        "https://zoomerville.com"
     ],
     "hyperpipe": [
+        "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipebackend.eu.projectsegfau.lt",
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "I"
 }

@@ -6,17 +6,11 @@
     "proxy": [],
     "invidious": [
         "https://inv.perditum.com",
-        "https://y.com.sb",
-        "https://inv.vern.cc",
-        "https://iv.melmac.space",
-        "https://inv.perditum.com",
-        "https://zoomerville.com",
-        "https://invidious.materialio.us",
         "https://invidious.nikkosphere.com"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipebackend.eu.projectsegfau.lt"
     ],
     "jiosaavn": "https://saavn-sigma.vercel.app",

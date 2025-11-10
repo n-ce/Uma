@@ -6,6 +6,12 @@
     "proxy": [],
     "invidious": [
         "https://invidious.nikkosphere.com",
+        "https://invidious.nikkosphere.com",
+        "https://y.com.sb",
+        "https://inv.vern.cc",
+        "https://invidious.materialio.us",
+        "https://iv.melmac.space",
+        "https://zoomerville.com",
         "https://inv.perditum.com"
     ],
     "hyperpipe": [
@@ -14,6 +20,6 @@
         "https://hyperpipebackend.eu.projectsegfau.lt",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "I"
 }

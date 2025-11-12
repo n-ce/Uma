@@ -5,13 +5,14 @@
     "hls": [],
     "proxy": [],
     "invidious": [
-        "https://zoomerville.com",
-        "https://y.com.sb",
-        "https://inv.vern.cc",
         "https://inv.perditum.com",
-        "https://iv.melmac.space",
+        "https://y.com.sb",
+        "https://invidious.nikkosphere.com",
+        "https://inv.vern.cc",
         "https://invidious.materialio.us",
-        "https://invidious.nikkosphere.com"
+        "https://iv.melmac.space",
+        "https://zoomerville.com",
+        "https://inv.perditum.com"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",
@@ -20,5 +21,5 @@
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
     "jiosaavn": "https://saavn-sigma.vercel.app",
-    "health": "N"
+    "health": "I"
 }

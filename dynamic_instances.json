@@ -7,17 +7,17 @@
     "invidious": [
         "https://inv.perditum.com",
         "https://y.com.sb",
-        "https://inv.vern.cc",
+        "https://iv.melmac.space",
         "https://zoomerville.com",
         "https://invidious.materialio.us",
-        "https://iv.melmac.space",
-        "https://inv.perditum.com"
+        "https://inv.vern.cc",
+        "https://invidious.nikkosphere.com"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
-    "health": "I"
+    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "health": "N"
 }

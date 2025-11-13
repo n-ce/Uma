@@ -5,13 +5,13 @@
     "hls": [],
     "proxy": [],
     "invidious": [
-        "https://inv.vern.cc",
         "https://y.com.sb",
         "https://invidious.materialio.us",
-        "https://iv.melmac.space",
-        "https://zoomerville.com",
         "https://invidious.nikkosphere.com",
-        "https://inv.perditum.com"
+        "https://inv.vern.cc",
+        "https://iv.melmac.space",
+        "https://inv.perditum.com",
+        "https://zoomerville.com"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",

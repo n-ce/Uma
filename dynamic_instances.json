@@ -6,12 +6,13 @@
     "proxy": [],
     "invidious": [
         "https://yt.omada.cafe",
+        "https://inv.perditum.com",
         "https://invidious.nikkosphere.com"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipebackend.eu.projectsegfau.lt",
+        "https://hyperpipeapi.darkness.services",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
     "jiosaavn": "https://jiosavan-ytify.vercel.app",

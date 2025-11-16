@@ -10,9 +10,8 @@
         "https://inv.perditum.com"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
-        "https://hyperpipebackend.in.projectsegfau.lt",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipebackend.eu.projectsegfau.lt"
     ],
     "jiosaavn": "https://saavn-ytify.vercel.app",

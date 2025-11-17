@@ -6,6 +6,7 @@
     "proxy": [],
     "invidious": [
         "https://yt.omada.cafe",
+        "https://inv.perditum.com",
         "https://invidious.nikkosphere.com"
     ],
     "hyperpipe": [
@@ -14,6 +15,6 @@
         "https://hyperpipebackend.eu.projectsegfau.lt",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "I"
 }

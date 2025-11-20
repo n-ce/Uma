@@ -11,8 +11,8 @@
     "hyperpipe": [
         "https://hyperpipeapi.darkness.services",
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipebackend.in.projectsegfau.lt",
-        "https://hyperpipebackend.eu.projectsegfau.lt"
+        "https://hyperpipebackend.eu.projectsegfau.lt",
+        "https://hyperpipebackend.in.projectsegfau.lt"
     ],
     "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "I"

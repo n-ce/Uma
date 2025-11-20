@@ -6,14 +6,20 @@
     "proxy": [],
     "invidious": [
         "https://yt.omada.cafe",
-        "https://inv.perditum.com"
+        "https://y.com.sb",
+        "https://inv.vern.cc",
+        "https://iv.melmac.space",
+        "https://invidious.materialio.us",
+        "https://zoomerville.com",
+        "https://inv.perditum.com",
+        "https://yt.omada.cafe"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
-        "https://hyperpipebackend.eu.projectsegfau.lt",
-        "https://hyperpipebackend.in.projectsegfau.lt"
+        "https://hyperpipebackend.in.projectsegfau.lt",
+        "https://hyperpipebackend.eu.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "health": "I"
 }

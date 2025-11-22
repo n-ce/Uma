@@ -7,19 +7,18 @@
     "invidious": [
         "https://yt.omada.cafe",
         "https://y.com.sb",
-        "https://iv.melmac.space",
-        "https://zoomerville.com",
-        "https://inv.perditum.com",
         "https://inv.vern.cc",
         "https://invidious.materialio.us",
-        "https://yt.omada.cafe"
+        "https://yt.omada.cafe",
+        "https://iv.melmac.space",
+        "https://inv.perditum.com",
+        "https://zoomerville.com"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
-        "https://hyperpipebackend.in.projectsegfau.lt",
         "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipebackend.eu.projectsegfau.lt"
     ],
-    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "jiosaavn": "https://jiosavan-ytify.vercel.app",
     "health": "I"
 }

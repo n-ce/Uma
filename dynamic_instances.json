@@ -5,15 +5,15 @@
     "hls": [],
     "proxy": [],
     "invidious": [
-        "https://yt.omada.cafe",
-        "https://inv.perditum.com"
+        "https://inv.perditum.com",
+        "https://yt.omada.cafe"
     ],
     "hyperpipe": [
+        "https://hyperpipebackend.eu.projectsegfau.lt",
         "https://hyperpipeapi.onrender.com",
-        "https://hyperpipeapi.darkness.services",
         "https://hyperpipebackend.in.projectsegfau.lt",
-        "https://hyperpipebackend.eu.projectsegfau.lt"
+        "https://hyperpipeapi.darkness.services"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "I"
 }

@@ -10,13 +10,13 @@
         "https://inv.vern.cc",
         "https://invidious.materialio.us",
         "https://yt.omada.cafe",
-        "https://iv.melmac.space",
         "https://zoomerville.com",
-        "https://inv.perditum.com"
+        "https://inv.perditum.com",
+        "https://iv.melmac.space"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com",
         "https://hyperpipebackend.eu.projectsegfau.lt",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],

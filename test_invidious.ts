@@ -1,15 +1,13 @@
 // @ts-ignore
 import { readFile } from 'fs/promises';
 
-let j = 0;
-async function getMixesTest(i: string): Promise<[number, string]> {
+async function getSuggestions(i: string): Promise<[number, string]> {
   const t = performance.now();
-  j++;
-  console.log(j,' ',i);
-  return fetch(`${i}/api/v1/mixes/RDGemKqzILV4w`)
+
+  return fetch(i + '/api/v1/search/suggestions?q=time')
     .then(_ => _.json())
     .then(data => {
-      if (data?.videos?.length) {
+      if (data?.suggestions?.length) {
         const score = Math.floor(1e5 / (performance.now() - t));
         return [score, i] as [number, string];
       } else throw new Error();
@@ -17,7 +15,7 @@ async function getMixesTest(i: string): Promise<[number, string]> {
     .catch(() => [0, i]);
 }
 
-const getLivingInstances = (instanceArray: string[]): Promise<string[]> => Promise.all(instanceArray.map(getMixesTest)).then(array =>
+const getLivingInstances = (instanceArray: string[]): Promise<string[]> => Promise.all(instanceArray.map(getSuggestions)).then(array =>
   array
     .filter((i) => i[0])
     .sort((a, b) => b[0] - a[0])

@@ -86,7 +86,11 @@ async function reorderByLoadTest(instances: string[]): Promise<string[]> {
 export default async function() {
   console.log('Initiating Invidious instance test');
   return await readFile('./invidious.json', 'utf8')
-    .then(_ => JSON.parse(_))
+    .then(_ => {
+      const x = JSON.parse(_);
+      console.log(x);
+      return x;
+    })
     .then(async (_) => await Promise.all(_.map(getSuggestions)).then(array =>
       array
         .filter((i) => i[0])

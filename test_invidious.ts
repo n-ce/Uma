@@ -4,7 +4,7 @@ import { readFile } from 'fs/promises';
 async function getSuggestions(i: string): Promise<[number, string]> {
   const t = performance.now();
 
-  return fetch(i + '/api/v1/search/suggestions?q=time')
+  return fetch(i + '/api/v1/search/suggestions?q=the')
     .then(_ => _.json())
     .then(data => {
       if (data?.suggestions?.length) {

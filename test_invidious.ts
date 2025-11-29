@@ -15,12 +15,6 @@ async function getSuggestions(i: string): Promise<[number, string]> {
     .catch(() => [0, i]);
 }
 
-const getLivingInstances = (instanceArray: string[]): Promise<string[]> => Promise.all(instanceArray.map(getSuggestions)).then(array =>
-  array
-    .filter((i) => i[0])
-    .sort((a, b) => b[0] - a[0])
-    .map(i => i[1] as string)
-);
 
 async function getAudioUrl(instance: string): Promise<[string, string]> {
   const url = await fetch(`${instance}/api/v1/videos/GemKqzILV4w`)
@@ -93,6 +87,10 @@ export default async function() {
   console.log('Initiating Invidious instance test');
   return await readFile('./invidious.json', 'utf8')
     .then(_ => JSON.parse(_))
-    .then(async () => await getLivingInstances())
+    .then(async (_) => await Promise.all(_.map(getSuggestions)).then(array =>
+      array
+        .filter((i) => i[0])
+        .sort((a, b) => b[0] - a[0])
+        .map(i => i[1] as string)))
     .then(reorderByLoadTest)
 }

@@ -15,7 +15,7 @@ async function getSuggestions(i: string): Promise<[number, string]> {
     .catch(() => [0, i]);
 }
 
-const getLivingInstances = async (instanceArray: string[]): Promise<string[]> => await Promise.all(instanceArray.map(getSuggestions)).then(array =>
+const getLivingInstances = (instanceArray: string[]): Promise<string[]> => Promise.all(instanceArray.map(getSuggestions)).then(array =>
   array
     .filter((i) => i[0])
     .sort((a, b) => b[0] - a[0])

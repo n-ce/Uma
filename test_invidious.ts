@@ -133,6 +133,7 @@ export default async function() {
     console.log(suggestionsResults); // Uncomment to see raw scores
     
     const livingInstances = suggestionsResults
+        .filter(i => i[1])
         .sort((a, b) => b[0] - a[0]) // Sort ONLY the passing instances by speed
         .map(i => i[1] as string);   // Extract just the URL strings
         

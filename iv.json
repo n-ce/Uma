@@ -1,13 +1,5 @@
 [
     [
-        "https://yt.omada.cafe",
-        "https://invidious.materialio.us",
-        "https://inv.perditum.com",
-        "https://zoomerville.com",
-        "https://iv.melmac.space",
-        "https://inv.vern.cc"
-    ],
-    [
         "https://invidious.materialio.us",
         "https://inv.perditum.com",
         "https://zoomerville.com",
@@ -63,6 +55,10 @@
         "https://invidious.materialio.us"
     ],
     [
+        "https://invidious.materialio.us"
+    ],
+    [
+        "https://inv.perditum.com",
         "https://invidious.materialio.us"
     ]
 ]

@@ -13,7 +13,7 @@ async function getSuggestions(i: string): Promise<[number, string]> {
         .then(_ => _.json())
         .then(data => {
             const finalTime = performance.now() - t;
-            // console.log(i, finalTime); // Uncomment for logging time
+            console.log(i, finalTime); // Uncomment for logging time
             
             // Score is calculated inversely to response time (faster = higher score)
             const score = Math.floor(1e5 / finalTime);
@@ -130,15 +130,14 @@ export default async function() {
     
     // 2. Filter for living instances and sort by speed
     const suggestionsResults = await Promise.all(instances.map(getSuggestions));
-    // console.log(suggestionsResults); // Uncomment to see raw scores
+    console.log(suggestionsResults); // Uncomment to see raw scores
     
     const livingInstances = suggestionsResults
-        .filter((i) => i[0])         // Filter out failures (score 0)
         .sort((a, b) => b[0] - a[0]) // Sort ONLY the passing instances by speed
         .map(i => i[1] as string);   // Extract just the URL strings
         
     console.log(`Living instances found (speed-sorted): ${livingInstances.length}`);
-    // console.log(livingInstances); // Uncomment to see speed-sorted list
+    console.log(livingInstances); // Uncomment to see speed-sorted list
     
     // 3. Reorder by load test (proxy capability)
     const finalOrderedList = await reorderByLoadTest(livingInstances);

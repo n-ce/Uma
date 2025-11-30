@@ -21,13 +21,15 @@ jobs:
       with:
         node-version: 'lts/*'
     
-    # Run the main script which generates iv.txt and updates iv.json
-    - run: node updater.ts
+    # 1. Run the main script which generates iv.txt and updates iv.json
+    - name: Run Instance Updater Script
+      run: node updater.ts
     
-    - name: Commit and Push Updated Lists
-      uses: test-room-7/action-update-file@v1
+    # 2. Commit and Push Files
+    - name: Commit and Push Files
+      uses: EndBug/add-and-commit@v9
       with:
-          # Use the 'files' input to include both the output list and the history file
-          files: iv.txt iv.json
-          commit-msg: Automated update of Invidious list and history
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+        # Files to commit. This accepts a glob pattern or multiple files separated by spaces.
+        add: 'iv.txt iv.json'
+        message: 'Chore: Automated update of Invidious list and history'
+        default_author: github_actions

@@ -29,7 +29,9 @@ jobs:
     - name: Commit and Push Files
       uses: EndBug/add-and-commit@v9
       with:
-        # Files to commit. This accepts a glob pattern or multiple files separated by spaces.
+        # Crucial fix: Pull the latest changes from the remote branch 
+        # before committing, resolving the non-fast-forward error.
+        pull: 'true' 
         add: 'iv.txt iv.json'
         message: 'Chore: Automated update of Invidious list and history'
         default_author: github_actions

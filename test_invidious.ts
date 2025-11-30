@@ -22,7 +22,7 @@ async function getSuggestions(i: string): Promise<[number, string]> {
                 return [score, i] as [number, string];
             else throw new Error('No suggestions found');
         })
-        .catch(() => [0, i]);
+        .catch(() => [0, '']);
 }
 
 /**

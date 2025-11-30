@@ -7,6 +7,7 @@ async function getSuggestions(i: string): Promise<[number, string]> {
   return fetch(i + '/api/v1/search/suggestions?q=the')
     .then(_ => _.json())
     .then(data => {
+      console.log(i, performance.now() - t);
       const score = Math.floor(1e5 / (performance.now() - t));
       if (data?.suggestions?.length)
         return [score, i] as [number, string];

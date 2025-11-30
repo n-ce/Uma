@@ -90,9 +90,10 @@ export default async function() {
   console.log(instances);
   
   const suggestionsResults = await Promise.all(instances.map(getSuggestions));
+  console.log(suggestionsResults);
   const livingInstances = suggestionsResults
-    .filter((i) => i[0]) // Filter for score > 0 (living)
     .sort((a, b) => b[0] - a[0]) // Sort by score (speed) descending
+    .filter((i) => i[0]) // Filter for score > 0 (living)
     .map(i => i[1] as string); // Extract just the URL strings
   
   console.log(livingInstances);

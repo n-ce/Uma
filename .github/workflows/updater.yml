@@ -1,10 +1,13 @@
+name: Update Invidious List
+
 on:
- pull_request:
- push:
-  branches:
-   - main
- schedule:
-   - cron: "*/10 * * * *"
+  pull_request:
+  push:
+    branches:
+      - main
+  schedule:
+    # Runs every 10 minutes
+    - cron: "*/10 * * * *"
     
 permissions:
   contents: write
@@ -17,11 +20,14 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: 'lts/*'
+    
+    # Run the main script which generates iv.txt and updates iv.json
     - run: node updater.ts
-    - name: Update List
+    
+    - name: Commit and Push Updated Lists
       uses: test-room-7/action-update-file@v1
       with:
-          file-path: iv.txt
-          commit-msg: Update List
+          # Use the 'files' input to include both the output list and the history file
+          files: iv.txt iv.json
+          commit-msg: Automated update of Invidious list and history
           github-token: ${{ secrets.GITHUB_TOKEN }}
-

@@ -10,14 +10,21 @@ on:
     - cron: "*/10 * * * *"
     
 permissions:
+  # Requires 'write' permission for the Git push operation
   contents: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
+    - name: Checkout Repository (For Git CLI access)
+      # Must check out using the token to enable authenticated pushing later
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
       with:
         node-version: 'lts/*'
     
@@ -25,13 +32,29 @@ jobs:
     - name: Run Instance Updater Script
       run: node updater.ts
     
-    # 2. Commit and Push Files
-    - name: Commit and Push Files
-      uses: EndBug/add-and-commit@v9
-      with:
-        # Crucial fix: Pull the latest changes from the remote branch 
-        # before committing, resolving the non-fast-forward error.
-        pull: 'true' 
-        add: 'iv.txt iv.json'
-        message: 'Chore: Automated update of Invidious list and history'
-        default_author: github_actions
+    # 2. Configure Git and Perform Commit/Push (Most Robust Method)
+    - name: Commit and Push Files via Git CLI
+      run: |
+        # Configure Git user details for the commit
+        git config user.name "GitHub Actions Bot"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+        # Check if the files were actually modified. 
+        # Exits the script successfully if no changes are detected.
+        if git diff --exit-code iv.txt iv.json > /dev/null; then
+          echo "No changes found in iv.txt or iv.json. Skipping commit."
+        else
+          # FIX for non-fast-forward: Pull the latest remote changes and rebase 
+          # your local changes on top of them before pushing.
+          echo "Changes detected. Pulling and rebasing..."
+          git pull --rebase origin main
+          
+          # Add both files to the staging area
+          git add iv.txt iv.json
+          
+          # Commit the changes (single commit for both files)
+          git commit -m "Chore: Automated update of Invidious list and history"
+          
+          # Push the commit to the main branch
+          git push
+        fi

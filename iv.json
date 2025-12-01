@@ -1,11 +1,5 @@
 [
     [
-        "https://inv.perditum.com",
-        "https://invidious.materialio.us",
-        "https://zoomerville.com",
-        "https://iv.melmac.space"
-    ],
-    [
         "https://iv.melmac.space",
         "https://invidious.materialio.us",
         "https://inv.perditum.com",
@@ -70,5 +64,9 @@
         "https://inv.perditum.com",
         "https://invidious.materialio.us",
         "https://zoomerville.com"
+    ],
+    [
+        "https://inv.perditum.com",
+        "https://invidious.materialio.us"
     ]
 ]

@@ -1,8 +1,5 @@
 [
     [
-        "https://invidious.materialio.us"
-    ],
-    [
         "https://invidious.materialio.us",
         "https://inv.perditum.com"
     ],
@@ -51,5 +48,12 @@
         "https://iv.melmac.space",
         "https://invidious.materialio.us",
         "https://inv.perditum.com"
+    ],
+    [
+        "https://yt.omada.cafe",
+        "https://iv.melmac.space",
+        "https://invidious.materialio.us",
+        "https://inv.perditum.com",
+        "https://inv.vern.cc"
     ]
 ]

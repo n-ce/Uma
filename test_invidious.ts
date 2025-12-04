@@ -8,8 +8,9 @@ import { readFile } from 'fs/promises';
  */
 async function getSuggestions(i: string): Promise<[number, string]> {
     const t = performance.now();
+    const q = '/api/v1/search/suggestions?q=the';
 
-    return fetch(i + '/api/v1/search/suggestions?q=the')
+    return fetch(i + q)
         .then(_ => _.json())
         .then(data => {
             const finalTime = performance.now() - t;
@@ -22,7 +23,10 @@ async function getSuggestions(i: string): Promise<[number, string]> {
                 return [score, i] as [number, string];
             else throw new Error('No suggestions found');
         })
-        .catch(() => [0, '']);
+        .catch((e) => {
+            console.log(i, e.message);
+            return [0, ''];
+        });
 }
 
 /**

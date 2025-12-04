@@ -131,9 +131,13 @@ export default async function() {
     const fileContent = await readFile('./invidious.json', 'utf8');
     const instances: string[] = JSON.parse(fileContent);
     console.log(`Total instances loaded: ${instances.length}`);
-    
+    const splitInHalf = arr => [arr.slice(0, Math.ceil(arr.length / 2)), arr.slice(Math.ceil(arr.length / 2))];
+    const [first, second] = splitInHalf(instances);
+
     // 2. Filter for living instances and sort by speed
-    const suggestionsResults = await Promise.all(instances.map(getSuggestions));
+    const suggestionsResultsFirst = await Promise.all(first.map(getSuggestions));
+    const suggestionsResultsSecond = await Promise.all(second.map(getSuggestions));
+    const suggestionsResults = suggestionsResultsFirst.concat(suggestionsResultsSecond);
     console.log(suggestionsResults); // Uncomment to see raw scores
     
     const livingInstances = suggestionsResults

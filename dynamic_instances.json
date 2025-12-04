@@ -1,15 +1,17 @@
 {
-    "piped": [],
+    "piped": [
+        "https://api.piped.private.coffee"
+    ],
     "hls": [],
     "proxy": [],
     "invidious": [
         "https://yt.omada.cafe",
-        "https://y.com.sb",
         "https://inv.vern.cc",
-        "https://invidious.materialio.us",
+        "https://iv.melmac.space",
         "https://yt.omada.cafe",
         "https://inv.perditum.com",
-        "https://iv.melmac.space"
+        "https://y.com.sb",
+        "https://invidious.materialio.us"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.darkness.services",
@@ -17,6 +19,6 @@
         "https://hyperpipebackend.eu.projectsegfau.lt",
         "https://hyperpipebackend.in.projectsegfau.lt"
     ],
-    "jiosaavn": "https://jiosavan-ytify.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "I"
 }

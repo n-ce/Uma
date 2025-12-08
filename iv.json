@@ -1,12 +1,6 @@
 [
     [
         "https://echostreamz.com",
-        "https://invidious.materialio.us",
-        "https://inv.perditum.com",
-        "https://iv.melmac.space"
-    ],
-    [
-        "https://echostreamz.com",
         "https://inv.perditum.com",
         "https://iv.melmac.space",
         "https://invidious.materialio.us",
@@ -85,6 +79,14 @@
         "https://inv.perditum.com",
         "https://iv.melmac.space",
         "https://invidious.materialio.us",
+        "https://inv.vern.cc",
+        "https://y.com.sb"
+    ],
+    [
+        "https://echostreamz.com",
+        "https://inv.perditum.com",
+        "https://invidious.materialio.us",
+        "https://iv.melmac.space",
         "https://inv.vern.cc",
         "https://y.com.sb"
     ]

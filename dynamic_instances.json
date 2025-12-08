@@ -12,8 +12,8 @@
         "https://inv.perditum.com"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
-        "https://hyperpipeapi.darkness.services"
+        "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com"
     ],
     "jiosaavn": "https://saavn-sigma.vercel.app",
     "health": "N"

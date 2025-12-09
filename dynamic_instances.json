@@ -5,9 +5,9 @@
     "hls": [],
     "proxy": [],
     "invidious": [
+        "https://invidious.materialio.us",
         "https://y.com.sb",
         "https://inv.vern.cc",
-        "https://invidious.materialio.us",
         "https://inv.perditum.com"
     ],
     "hyperpipe": [

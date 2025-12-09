@@ -5,18 +5,17 @@
     "hls": [],
     "proxy": [],
     "invidious": [
-        "https://inv.perditum.com",
         "https://y.com.sb",
-        "https://invidious.materialio.us",
         "https://iv.melmac.space",
         "https://zoomerville.com",
-        "https://inv.perditum.com",
-        "https://inv.vern.cc"
+        "https://inv.vern.cc",
+        "https://invidious.materialio.us",
+        "https://inv.perditum.com"
     ],
     "hyperpipe": [
         "https://hyperpipeapi.onrender.com",
         "https://hyperpipeapi.darkness.services"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
-    "health": "I"
+    "jiosaavn": "https://saavn-ytify.vercel.app",
+    "health": "N"
 }

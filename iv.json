@@ -1,12 +1,5 @@
 [
     [
-        "https://invidious.materialio.us",
-        "https://inv.perditum.com",
-        "https://zoomerville.com",
-        "https://iv.melmac.space",
-        "https://echostreamz.com"
-    ],
-    [
         "https://yt.omada.cafe",
         "https://zoomerville.com",
         "https://inv.perditum.com",
@@ -112,5 +105,13 @@
         "https://echostreamz.com",
         "https://inv.vern.cc",
         "https://y.com.sb"
+    ],
+    [
+        "https://yt.omada.cafe",
+        "https://inv.perditum.com",
+        "https://zoomerville.com",
+        "https://iv.melmac.space",
+        "https://echostreamz.com",
+        "https://invidious.materialio.us"
     ]
 ]

@@ -8,14 +8,14 @@
         "https://inv.vern.cc",
         "https://iv.melmac.space",
         "https://zoomerville.com",
-        "https://invidious.materialio.us",
+        "https://yt.omada.cafe",
         "https://inv.perditum.com",
-        "https://yt.omada.cafe"
+        "https://invidious.materialio.us"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.darkness.services",
-        "https://hyperpipeapi.onrender.com"
+        "https://hyperpipeapi.onrender.com",
+        "https://hyperpipeapi.darkness.services"
     ],
-    "jiosaavn": "https://saavn-sigma.vercel.app",
+    "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "I"
 }

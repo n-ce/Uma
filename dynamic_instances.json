@@ -5,16 +5,16 @@
     "invidious": [
         "https://yt.omada.cafe",
         "https://y.com.sb",
+        "https://invidious.materialio.us",
         "https://iv.melmac.space",
         "https://zoomerville.com",
         "https://inv.perditum.com",
         "https://inv.vern.cc",
-        "https://yt.omada.cafe",
-        "https://invidious.materialio.us"
+        "https://yt.omada.cafe"
     ],
     "hyperpipe": [
-        "https://hyperpipeapi.onrender.com",
-        "https://hyperpipeapi.darkness.services"
+        "https://hyperpipeapi.darkness.services",
+        "https://hyperpipeapi.onrender.com"
     ],
     "jiosaavn": "https://saavn-ytify.vercel.app",
     "health": "I"

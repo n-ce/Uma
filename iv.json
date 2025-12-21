@@ -2,13 +2,6 @@
     [
         "https://echostreamz.com",
         "https://iv.melmac.space",
-        "https://zoomerville.com",
-        "https://invidious.materialio.us",
-        "https://inv.vern.cc"
-    ],
-    [
-        "https://echostreamz.com",
-        "https://iv.melmac.space",
         "https://invidious.materialio.us",
         "https://zoomerville.com"
     ],
@@ -86,5 +79,11 @@
         "https://zoomerville.com",
         "https://inv.vern.cc",
         "https://y.com.sb"
+    ],
+    [
+        "https://echostreamz.com",
+        "https://iv.melmac.space",
+        "https://zoomerville.com",
+        "https://invidious.materialio.us"
     ]
 ]

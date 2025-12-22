@@ -10,14 +10,6 @@
     [
         "https://echostreamz.com",
         "https://zoomerville.com",
-        "https://invidious.materialio.us",
-        "https://iv.melmac.space",
-        "https://inv.vern.cc",
-        "https://y.com.sb"
-    ],
-    [
-        "https://echostreamz.com",
-        "https://zoomerville.com",
         "https://iv.melmac.space",
         "https://invidious.materialio.us",
         "https://inv.vern.cc",
@@ -91,6 +83,14 @@
         "https://zoomerville.com",
         "https://iv.melmac.space",
         "https://invidious.materialio.us",
+        "https://inv.vern.cc",
+        "https://y.com.sb"
+    ],
+    [
+        "https://echostreamz.com",
+        "https://zoomerville.com",
+        "https://invidious.materialio.us",
+        "https://iv.melmac.space",
         "https://inv.vern.cc",
         "https://y.com.sb"
     ]

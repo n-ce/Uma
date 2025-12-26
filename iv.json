@@ -1,8 +1,5 @@
 [
     [
-        "https://invidious.materialio.us"
-    ],
-    [
         "https://echostreamz.com",
         "https://yt.omada.cafe",
         "https://zoomerville.com",
@@ -63,5 +60,13 @@
     [
         "https://invidious.materialio.us",
         "https://zoomerville.com"
+    ],
+    [
+        "https://echostreamz.com",
+        "https://zoomerville.com",
+        "https://iv.melmac.space",
+        "https://invidious.materialio.us",
+        "https://inv.vern.cc",
+        "https://y.com.sb"
     ]
 ]

@@ -17,13 +17,6 @@
         "https://yt.omada.cafe",
         "https://zoomerville.com",
         "https://iv.melmac.space",
-        "https://invidious.materialio.us",
-        "https://y.com.sb"
-    ],
-    [
-        "https://yt.omada.cafe",
-        "https://zoomerville.com",
-        "https://iv.melmac.space",
         "https://invidious.materialio.us"
     ],
     [
@@ -80,5 +73,10 @@
         "https://iv.melmac.space",
         "https://invidious.materialio.us",
         "https://y.com.sb"
+    ],
+    [
+        "https://zoomerville.com",
+        "https://iv.melmac.space",
+        "https://invidious.materialio.us"
     ]
 ]

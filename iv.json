@@ -19,12 +19,6 @@
     ],
     [
         "https://yt.omada.cafe",
-        "https://iv.melmac.space",
-        "https://invidious.materialio.us",
-        "https://y.com.sb"
-    ],
-    [
-        "https://yt.omada.cafe",
         "https://invidious.materialio.us",
         "https://iv.melmac.space",
         "https://y.com.sb"
@@ -74,6 +68,13 @@
         "https://yt.omada.cafe",
         "https://invidious.materialio.us",
         "https://iv.melmac.space",
+        "https://inv.vern.cc",
+        "https://y.com.sb"
+    ],
+    [
+        "https://yt.omada.cafe",
+        "https://iv.melmac.space",
+        "https://invidious.materialio.us",
         "https://inv.vern.cc",
         "https://y.com.sb"
     ]

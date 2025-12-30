@@ -1,14 +1,6 @@
 [
     [
         "https://yt.omada.cafe",
-        "https://inv.thepixora.com",
-        "https://iv.melmac.space",
-        "https://inv.vern.cc",
-        "https://y.com.sb",
-        "https://invidious.materialio.us"
-    ],
-    [
-        "https://yt.omada.cafe",
         "https://iv.melmac.space",
         "https://inv.vern.cc",
         "https://invidious.materialio.us",
@@ -95,5 +87,11 @@
         "https://invidious.materialio.us",
         "https://inv.vern.cc",
         "https://y.com.sb"
+    ],
+    [
+        "https://inv.thepixora.com",
+        "https://zoomerville.com",
+        "https://invidious.materialio.us",
+        "https://iv.melmac.space"
     ]
 ]

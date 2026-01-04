@@ -4,17 +4,6 @@
         "https://yt.omada.cafe",
         "https://zoomerville.com",
         "https://inv.thepixora.com",
-        "https://iv.melmac.space",
-        "https://invidious.materialio.us",
-        "https://inv.vern.cc",
-        "https://y.com.sb",
-        "https://inv.perditum.com"
-    ],
-    [
-        "https://echostreamz.com",
-        "https://yt.omada.cafe",
-        "https://zoomerville.com",
-        "https://inv.thepixora.com",
         "https://invidious.materialio.us",
         "https://iv.melmac.space",
         "https://inv.perditum.com",
@@ -130,5 +119,16 @@
         "https://y.com.sb",
         "https://inv.perditum.com",
         "https://invidious.materialio.us"
+    ],
+    [
+        "https://echostreamz.com",
+        "https://yt.omada.cafe",
+        "https://zoomerville.com",
+        "https://inv.thepixora.com",
+        "https://iv.melmac.space",
+        "https://invidious.materialio.us",
+        "https://inv.perditum.com",
+        "https://y.com.sb",
+        "https://inv.vern.cc"
     ]
 ]

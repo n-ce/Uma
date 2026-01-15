@@ -2,15 +2,6 @@
     [
         "https://yt.omada.cafe",
         "https://zoomerville.com",
-        "https://invidious.materialio.us",
-        "https://iv.melmac.space",
-        "https://echostreamz.com",
-        "https://inv.vern.cc",
-        "https://y.com.sb"
-    ],
-    [
-        "https://yt.omada.cafe",
-        "https://zoomerville.com",
         "https://iv.melmac.space",
         "https://echostreamz.com",
         "https://invidious.materialio.us",
@@ -105,6 +96,15 @@
         "https://echostreamz.com",
         "https://inv.vern.cc",
         "https://invidious.materialio.us",
+        "https://y.com.sb"
+    ],
+    [
+        "https://yt.omada.cafe",
+        "https://zoomerville.com",
+        "https://iv.melmac.space",
+        "https://echostreamz.com",
+        "https://invidious.materialio.us",
+        "https://inv.vern.cc",
         "https://y.com.sb"
     ]
 ]

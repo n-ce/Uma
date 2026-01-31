@@ -1,15 +1,6 @@
 [
     [
         "https://yt.omada.cafe",
-        "https://inv-veltrix-2.zeabur.app",
-        "https://invidious.reallyaweso.me",
-        "https://echostreamz.com",
-        "https://inv.vern.cc",
-        "https://y.com.sb",
-        "https://invidious.materialio.us"
-    ],
-    [
-        "https://yt.omada.cafe",
         "https://invidious.reallyaweso.me",
         "https://echostreamz.com",
         "https://inv-veltrix-2.zeabur.app",
@@ -124,6 +115,17 @@
         "https://echostreamz.com",
         "https://invidious.materialio.us",
         "https://inv.vern.cc",
+        "https://y.com.sb"
+    ],
+    [
+        "https://yt.omada.cafe",
+        "https://inv-veltrix-3.zeabur.app",
+        "https://inv-veltrix-2.zeabur.app",
+        "https://invidious.reallyaweso.me",
+        "https://echostreamz.com",
+        "https://iv.melmac.space",
+        "https://inv.vern.cc",
+        "https://invidious.materialio.us",
         "https://y.com.sb"
     ]
 ]

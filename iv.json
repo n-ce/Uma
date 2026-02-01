@@ -1,18 +1,6 @@
 [
     [
         "https://invidious.nikkosphere.com",
-        "https://inv-veltrix-2.zeabur.app",
-        "https://inv-veltrix.zeabur.app",
-        "https://inv-veltrix-3.zeabur.app",
-        "https://yt.omada.cafe",
-        "https://iv.melmac.space",
-        "https://invidious.reallyaweso.me",
-        "https://echostreamz.com",
-        "https://invidious.materialio.us",
-        "https://inv.vern.cc"
-    ],
-    [
-        "https://invidious.nikkosphere.com",
         "https://invidious.f5.si",
         "https://inv-veltrix-3.zeabur.app",
         "https://inv-veltrix-2.zeabur.app",
@@ -155,5 +143,17 @@
         "https://echostreamz.com",
         "https://invidious.materialio.us",
         "https://inv.vern.cc"
+    ],
+    [
+        "https://invidious.f5.si",
+        "https://invidious.nikkosphere.com",
+        "https://inv-veltrix.zeabur.app",
+        "https://inv-veltrix-3.zeabur.app",
+        "https://invidious.reallyaweso.me",
+        "https://iv.melmac.space",
+        "https://echostreamz.com",
+        "https://inv-veltrix-2.zeabur.app",
+        "https://inv.vern.cc",
+        "https://invidious.materialio.us"
     ]
 ]

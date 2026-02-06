@@ -1,14 +1,5 @@
 [
     [
-        "https://yt.omada.cafe",
-        "https://invidious.darkness.services",
-        "https://invidious.reallyaweso.me",
-        "https://inv-veltrix-3.zeabur.app",
-        "https://iv.melmac.space",
-        "https://invidious.materialio.us",
-        "https://inv.vern.cc"
-    ],
-    [
         "https://inv-veltrix-3.zeabur.app",
         "https://yt.omada.cafe",
         "https://invidious.darkness.services",
@@ -83,6 +74,14 @@
     ],
     [
         "https://yt.omada.cafe",
+        "https://invidious.reallyaweso.me",
+        "https://iv.melmac.space",
+        "https://invidious.materialio.us",
+        "https://inv.vern.cc"
+    ],
+    [
+        "https://yt.omada.cafe",
+        "https://invidious.darkness.services",
         "https://invidious.reallyaweso.me",
         "https://iv.melmac.space",
         "https://invidious.materialio.us",

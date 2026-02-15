@@ -3,20 +3,6 @@
         "https://invidious.darkness.services",
         "https://echostreamz.com",
         "https://yt.omada.cafe",
-        "https://invidious.f5.si",
-        "https://invidious.reallyaweso.me",
-        "https://iv.melmac.space",
-        "https://inv-veltrix-3.zeabur.app",
-        "https://inv-veltrix.zeabur.app",
-        "https://inv-veltrix-2.zeabur.app",
-        "https://invidious.materialio.us",
-        "https://y.com.sb",
-        "https://inv.vern.cc"
-    ],
-    [
-        "https://invidious.darkness.services",
-        "https://echostreamz.com",
-        "https://yt.omada.cafe",
         "https://invidious.reallyaweso.me",
         "https://inv-veltrix-3.zeabur.app",
         "https://invidious.f5.si",
@@ -161,5 +147,16 @@
         "https://inv-veltrix.zeabur.app",
         "https://invidious.materialio.us",
         "https://y.com.sb"
+    ],
+    [
+        "https://invidious.darkness.services",
+        "https://echostreamz.com",
+        "https://yt.omada.cafe",
+        "https://invidious.reallyaweso.me",
+        "https://inv-veltrix-3.zeabur.app",
+        "https://inv-veltrix-2.zeabur.app",
+        "https://inv-veltrix.zeabur.app",
+        "https://invidious.materialio.us",
+        "https://inv.vern.cc"
     ]
 ]

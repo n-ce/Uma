@@ -1,16 +1,5 @@
 [
     [
-        "https://invidious.f5.si",
-        "https://echostreamz.com",
-        "https://yt.omada.cafe",
-        "https://invidious.reallyaweso.me",
-        "https://iv.melmac.space",
-        "https://inv.vern.cc",
-        "https://inv-veltrix-2.zeabur.app",
-        "https://invidious.materialio.us",
-        "https://y.com.sb"
-    ],
-    [
         "https://echostreamz.com",
         "https://yt.omada.cafe",
         "https://invidious.reallyaweso.me",
@@ -103,6 +92,15 @@
         "https://echostreamz.com",
         "https://invidious.f5.si",
         "https://invidious.reallyaweso.me",
+        "https://iv.melmac.space",
+        "https://invidious.materialio.us",
+        "https://inv.vern.cc"
+    ],
+    [
+        "https://echostreamz.com",
+        "https://invidious.darkness.services",
+        "https://invidious.reallyaweso.me",
+        "https://invidious.f5.si",
         "https://iv.melmac.space",
         "https://invidious.materialio.us",
         "https://inv.vern.cc"

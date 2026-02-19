@@ -20,7 +20,7 @@ async function isAlive(instance: string): Promise<boolean> {
  */
 async function getFunctionalScore(instance: string): Promise<number> {
     try {
-        const res = await fetch(`${instance}/api/v1/videos/GemKqzILV4w`);
+        const res = await fetch(`${instance}/api/v1/videos/v4pi1LxuDHc`);
         if (!res.ok) return 0;
 console.log('///// ',instance);
         const data = await res.json();

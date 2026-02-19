@@ -5,7 +5,6 @@ import { readFile } from 'fs/promises';
  * Stage 1: Basic connectivity check.
  */
 async function isAlive(instance: string): Promise<boolean> {
-    console.log(instance);
     try {
         const res = await fetch(instance, { method: 'HEAD' });
         return res.ok;
@@ -61,6 +60,8 @@ export default async function() {
     const aliveList = aliveResults.flat().filter((i): i is string => i !== null);
 
     console.log(`Initial check: ${aliveList.length} instances alive.`);
+    console.log(aliveList);
+    
 
     // 2. Score the alive instances for ordering
     // This runs in parallel to ensure "at any cost" execution speed

@@ -1,14 +1,5 @@
 [
     [
-        "https://invidious.f5.si",
-        "https://echostreamz.com",
-        "https://invidious.reallyaweso.me",
-        "https://iv.melmac.space",
-        "https://invidious.materialio.us",
-        "https://inv.vern.cc",
-        "https://y.com.sb"
-    ],
-    [
         "https://echostreamz.com",
         "https://invidious.darkness.services",
         "https://invidious.f5.si",
@@ -368,5 +359,8 @@
         "https://yt.owo.si",
         "https://inv.vy.ci",
         "https://y.com.sb"
+    ],
+    [
+        "https://invidious.f5.si"
     ]
 ]

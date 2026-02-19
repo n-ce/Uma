@@ -3,17 +3,6 @@
         "https://invidious.f5.si",
         "https://echostreamz.com",
         "https://yt.omada.cafe",
-        "https://invidious.reallyaweso.me",
-        "https://iv.melmac.space",
-        "https://invidious.materialio.us",
-        "https://inv.vern.cc",
-        "https://y.com.sb",
-        "https://invidious.darkness.services"
-    ],
-    [
-        "https://invidious.f5.si",
-        "https://echostreamz.com",
-        "https://yt.omada.cafe",
         "https://compilations.broquemonsieur.net",
         "https://invidious.frontendfriendly.xyz",
         "https://invidious.privacyfucking.rocks",
@@ -410,5 +399,10 @@
     [
         "https://invidious.f5.si",
         "https://echostreamz.com"
+    ],
+    [
+        "https://invidious.f5.si",
+        "https://echostreamz.com",
+        "https://yt.omada.cafe"
     ]
 ]

@@ -2,154 +2,85 @@
 import { readFile } from 'fs/promises';
 
 /**
- * Checks an Invidious instance for responsiveness and speed using the search suggestions API.
- * @param i The instance URL.
- * @returns A Promise resolving to [score, url], where score is 0 if failed.
- */
-async function getSuggestions(i: string): Promise<[number, string]> {
-    const t = performance.now();
-    const q = '/api/v1/search/suggestions?q=the';
-
-    return fetch(i + q)
-        .then(_ => _.json())
-        .then(data => {
-            const finalTime = performance.now() - t;
-            console.log(i, finalTime); // Uncomment for logging time
-            
-            // Score is calculated inversely to response time (faster = higher score)
-            const score = Math.floor(1e5 / finalTime);
-            
-            if (data?.suggestions?.length)
-                return [score, i] as [number, string];
-            else throw new Error('No suggestions found');
-        })
-        .catch((e) => {
-            console.log(i, e.message);
-            return [0, ''];
-        });
-}
-
-/**
  * Fetches an audio stream URL for a specific video ID from the instance.
- * @param instance The instance URL.
- * @returns A Promise resolving to [instanceUrl, audioStreamUrl] or [instanceUrl, ''].
  */
 async function getAudioUrl(instance: string): Promise<[string, string]> {
-    const url = await fetch(`${instance}/api/v1/videos/GemKqzILV4w`)
-        .then(res => res.json())
-        .then(data => {
-            // console.log(instance, `data: ${Boolean(data.adaptiveFormats.length)}`); // Uncomment for logging
-            
-            if (data && 'adaptiveFormats' in data) {
-                // Find the first audio-only format
-                const audioFormat = data.adaptiveFormats.find((f: { type: string; }) => f.type.startsWith('audio'));
-                if (audioFormat) {
-                    return audioFormat.url;
-                } else {
-                    throw new Error('No audio format found');
-                }
-            } else {
-                throw new Error(data.error || 'Unknown API error');
-            }
-        })
-        .catch(() => '');
-
-    return [instance, url];
+    try {
+        const res = await fetch(`${instance}/api/v1/videos/GemKqzILV4w`);
+        const data = await res.json();
+        
+        if (data?.adaptiveFormats) {
+            const audioFormat = data.adaptiveFormats.find((f: { type: string; }) => f.type.startsWith('audio'));
+            return [instance, audioFormat ? audioFormat.url : ''];
+        }
+    } catch (e) {
+        // Silently fail to keep logs clean during bulk testing
+    }
+    return [instance, ''];
 }
 
 /**
  * Tests if the instance can successfully proxy the fetched audio URL.
- * @param i The instance URL.
- * @param url The audio stream URL to be proxied.
- * @returns A Promise resolving to the instance URL if passed, or '' if failed.
  */
-async function loadTest(i: string, url: string): Promise<string> {
+async function loadTest(i: string, url: string): Promise<[string, boolean]> {
+    if (!url) return [i, false];
 
-    if (!url) {
-        console.log(`loadTest: ${i} - Skipped (no audio URL)`);
-        return '';
+    try {
+        const curl = new URL(url);
+        const origin = curl.origin;
+        const proxiedUrl = url.replace(origin, i) + '&host=' + origin.slice(8);
+
+        const res = await fetch(proxiedUrl);
+        const passed = res.status === 200;
+        console.log(`loadTest: ${i} - ${passed ? 'passed' : 'failed'}`);
+        return [i, passed];
+    } catch {
+        return [i, false];
     }
-
-    // Construct the proxied URL using the Invidious proxy mechanism
-    const curl = new URL(url);
-    const origin = curl.origin;
-    const proxiedUrl = url.replace(origin, i) + '&host=' + origin.slice(8);
-
-    const passed = await fetch(proxiedUrl)
-        .then(res => res.status === 200)
-        .catch(() => false);
-
-    console.log(`loadTest: ${i} - ${passed ? 'passed' : 'failed'} proxy test`);
-
-    return passed ? i : '';
 }
 
 /**
- * Reorders the list of instances based on audio URL availability and proxy load test results.
- * @param instances The array of speed-sorted instance URLs.
- * @returns A Promise resolving to the final, prioritized array of instance URLs.
+ * Main logic to split, test, and order instances by proxy capability.
  */
-async function reorderByLoadTest(instances: string[]): Promise<string[]> {
-    console.log('Initiating load test to reorder instances...');
-    console.log(`Testing ${instances.length} living instances.`);
-    
-    // Fetch audio URLs for all living instances in parallel
-    const audioUrls = await Promise.all(instances.map(getAudioUrl));
-    
-    // Run the proxy load test for all instances in parallel
-    const loadTestResults = await Promise.all(audioUrls.map(([instance, url]) => loadTest(instance, url)));
-
-    // Sort the instances based on a multi-criteria priority
-    instances = instances.sort((a, b) => {
-        const aLoadTestPassed = loadTestResults.includes(a);
-        const bLoadTestPassed = loadTestResults.includes(b);
-
-        // 1. Prioritize instances that passed the loadTest (proxy capability)
-        if (aLoadTestPassed && !bLoadTestPassed) return -1;
-        if (!aLoadTestPassed && bLoadTestPassed) return 1;
-
-        const aAudioUrl = audioUrls.find(([inst]) => inst === a)?.[1];
-        const bAudioUrl = audioUrls.find(([inst]) => inst === b)?.[1];
-
-        // 2. Then prioritize instances that successfully found an audio URL
-        if (aAudioUrl && !bAudioUrl) return -1;
-        if (!aAudioUrl && bAudioUrl) return 1;
-
-        // 3. Fallback to original speed ranking (or maintain relative order)
-        return 0; 
-    });
-    
-    return instances;
-}
-
-// --- Main Execution Block ---
-
 export default async function() {
-    console.log('Initiating Invidious instance test');
+    console.log('Initiating Invidious load test');
 
-    // 1. Read and parse the instance list
     const fileContent = await readFile('./invidious.json', 'utf8');
     const instances: string[] = JSON.parse(fileContent);
-    console.log(`Total instances loaded: ${instances.length}`);
-    const splitInHalf = arr => [arr.slice(0, Math.ceil(arr.length / 2)), arr.slice(Math.ceil(arr.length / 2))];
-    const [first, second] = splitInHalf(instances);
 
-    // 2. Filter for living instances and sort by speed
-    const suggestionsResultsFirst = await Promise.all(first.map(getSuggestions));
-    const suggestionsResultsSecond = await Promise.all(second.map(getSuggestions));
-    const suggestionsResults = suggestionsResultsFirst.concat(suggestionsResultsSecond);
-    console.log(suggestionsResults); // Uncomment to see raw scores
-    
-    const livingInstances = suggestionsResults
-        .filter(i => i[1])
-        .sort((a, b) => b[0] - a[0]) // Sort ONLY the passing instances by speed
-        .map(i => i[1] as string);   // Extract just the URL strings
-        
-    console.log(`Living instances found (speed-sorted): ${livingInstances.length}`);
-    console.log(livingInstances); // Uncomment to see speed-sorted list
-    
-    // 3. Reorder by load test (proxy capability)
-    const finalOrderedList = await reorderByLoadTest(livingInstances);
+    // Split into three chunks
+    const splitInThree = (arr: string[]) => {
+        const size = Math.ceil(arr.length / 3);
+        return [
+            arr.slice(0, size),
+            arr.slice(size, size * 2),
+            arr.slice(size * 2)
+        ];
+    };
 
+    const chunks = splitInThree(instances);
+    
+    // Process chunks to get potential audio URLs
+    const audioResults = await Promise.all(
+        chunks.map(chunk => Promise.all(chunk.map(getAudioUrl)))
+    );
+    const flatAudioResults = audioResults.flat();
+
+    // Perform load tests on instances that returned a URL
+    const loadResults = await Promise.all(
+        flatAudioResults.map(([inst, url]) => loadTest(inst, url))
+    );
+
+    // Create a Map for quick lookup of test results
+    const resultsMap = new Map(loadResults);
+
+    // Sort: Passed instances first, failed/unresponsive last
+    const finalOrderedList = instances.sort((a, b) => {
+        const aPassed = resultsMap.get(a) ? 1 : 0;
+        const bPassed = resultsMap.get(b) ? 1 : 0;
+        return bPassed - aPassed; 
+    });
+
+    console.log(`Test complete. Prioritized ${loadResults.filter(r => r[1]).length} functional proxies.`);
     return finalOrderedList;
 }

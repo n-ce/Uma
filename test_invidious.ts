@@ -2,87 +2,67 @@
 import { readFile } from 'fs/promises';
 
 /**
- * Stage 1: API Stats & Version Check.
- * Checks for the 'version' property regardless of HTTP status code.
+ * Performs a deep functional check on a single instance using the video API.
+ * Returns a score and the instance URL.
  */
-async function isAlive(instance: string): Promise<boolean> {
+async function getFunctionalScore(instance: string): Promise<[number, string] | null> {
     try {
-        const res = await fetch(`${instance}/api/v1/stats`);
-        const data = await res.json();
-        // Instance is considered alive if it returns a valid Invidious version string
-        return data && typeof data === 'object' && 'version' in data;
-    } catch {
-        return false;
-    }
-}
-
-/**
- * Stage 2: Audio URL and Proxy Verification.
- * Returns a score: 2 (Proxy Pass), 1 (Metadata Pass), 0 (Alive only).
- */
-async function getFunctionalScore(instance: string): Promise<number> {
-    try {
+        // Direct test using the video API
         const res = await fetch(`${instance}/api/v1/videos/v4pi1LxuDHc`);
         const data = await res.json();
         
-        const audioFormat = data?.adaptiveFormats?.find((f: any) => f.type?.startsWith('audio'));
-        if (!audioFormat) return 0; 
+        // If the response doesn't have adaptiveFormats, we consider it a failure 
+        // as it cannot fulfill the primary purpose of the instance.
+        if (!data || !data.adaptiveFormats) {
+            return null;
+        }
 
-        console.log('Testing Functional Capability: ', instance);
+        console.log(`Checking: ${instance}`);
 
+        const audioFormat = data.adaptiveFormats.find((f: any) => f.type?.startsWith('audio'));
+        
+        // If no audio format is found, the instance is alive but limited
+        if (!audioFormat) return [1, instance];
+
+        // Load Test (Proxy check)
         const curl = new URL(audioFormat.url);
         const proxiedUrl = audioFormat.url.replace(curl.origin, instance) + '&host=' + curl.origin.slice(8);
         
-        // Proxy check
         const proxyRes = await fetch(proxiedUrl, { method: 'HEAD' });
-        return proxyRes.status === 200 ? 2 : 1;
-    } catch {
-        return 0;
+        
+        // Score 2: Full Proxy Pass | Score 1: Metadata Pass only
+        const finalScore = proxyRes.status === 200 ? 2 : 1;
+        return [finalScore, instance];
+
+    } catch (e) {
+        // Instance failed to return valid JSON or connection failed
+        return null;
     }
 }
 
 export default async function() {
-    console.log('Initiating Invidious Multi-Stage Test...');
+    console.log('Initiating Sequential Video API Test...');
 
     const fileContent = await readFile('./invidious.json', 'utf8');
     const instances: string[] = JSON.parse(fileContent);
 
-    const splitInThree = (arr: string[]) => {
-        const s1 = Math.ceil(arr.length / 3);
-        const s2 = Math.ceil((arr.length - s1) / 2) + s1;
-        return [
-            arr.slice(0, s1),
-            arr.slice(s1, s2),
-            arr.slice(s2)
-        ];
-    };
+    const results: { inst: string; score: number }[] = [];
 
-    const chunks = splitInThree(instances);
+    // One-by-one sequential execution
+    for (const instance of instances) {
+        const result = await getFunctionalScore(instance);
+        if (result) {
+            const [score, inst] = result;
+            results.push({ inst, score });
+        }
+    }
 
-    // 1. Parallel check for instances returning a version property
-    const aliveResults = await Promise.all(
-        chunks.map(chunk => 
-            Promise.all(chunk.map(async inst => (await isAlive(inst)) ? inst : null))
-        )
-    );
-    const aliveList = aliveResults.flat().filter((i): i is string => i !== null);
-
-    console.log(`Initial check: ${aliveList.length} instances validated via version.`);
-
-    // 2. Score the alive instances for ordering
-    const scoredList = await Promise.all(
-        aliveList.map(async (inst) => {
-            const score = await getFunctionalScore(inst);
-            return { inst, score };
-        })
-    );
-
-    // 3. Sort by score (Functional > Metadata > Version Only)
-    const sortedFinalList = scoredList
+    // Sort by functional score (Proxy > Metadata)
+    const sortedFinalList = results
         .sort((a, b) => b.score - a.score)
         .map(item => item.inst);
 
-    console.log(`Final list compiled with ${sortedFinalList.length} instances.`);
+    console.log(`Test complete. ${sortedFinalList.length} instances validated.`);
     
     return sortedFinalList;
 }

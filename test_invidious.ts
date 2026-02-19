@@ -5,6 +5,7 @@ import { readFile } from 'fs/promises';
  * Stage 1: Basic connectivity check.
  */
 async function isAlive(instance: string): Promise<boolean> {
+    console.log(instance);
     try {
         const res = await fetch(instance, { method: 'HEAD' });
         return res.ok;

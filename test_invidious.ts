@@ -2,45 +2,42 @@
 import { readFile } from 'fs/promises';
 
 /**
- * Fetches audio stream URL.
+ * Stage 1: Basic connectivity check.
  */
-async function getAudioUrl(instance: string): Promise<[string, string | null]> {
+async function isAlive(instance: string): Promise<boolean> {
     try {
-        // Using the same popular music ID as requested
-        const res = await fetch(`${instance}/api/v1/videos/GemKqzILV4w`, { 
-            signal: AbortSignal.timeout(6000) 
-        });
-        
-        if (!res.ok) return [instance, null];
-        
-        const data = await res.json();
-        // Check for adaptiveFormats and ensure it's an array
-        if (data?.adaptiveFormats && Array.isArray(data.adaptiveFormats)) {
-            const audioFormat = data.adaptiveFormats.find((f: any) => f.type?.startsWith('audio'));
-            return [instance, audioFormat ? audioFormat.url : null];
-        }
-    } catch (e) {
-        // Silent catch to keep CI logs clean
+        const res = await fetch(instance, { method: 'HEAD' });
+        return res.ok;
+    } catch {
+        return false;
     }
-    return [instance, null];
 }
 
 /**
- * Validates the proxy functionality.
+ * Stage 2: Fetches audio stream URL.
+ */
+async function getAudioUrl(instance: string): Promise<[string, string | null]> {
+    try {
+        const res = await fetch(`${instance}/api/v1/videos/GemKqzILV4w`);
+        if (!res.ok) return [instance, null];
+        
+        const data = await res.json();
+        const audioFormat = data?.adaptiveFormats?.find((f: any) => f.type?.startsWith('audio'));
+        return [instance, audioFormat ? audioFormat.url : null];
+    } catch {
+        return [instance, null];
+    }
+}
+
+/**
+ * Stage 3: Verifies proxy functionality.
  */
 async function loadTest(i: string, url: string | null): Promise<boolean> {
     if (!url) return false;
     try {
         const curl = new URL(url);
-        const origin = curl.origin;
-        // Construct the proxy URL
-        const proxiedUrl = url.replace(origin, i) + '&host=' + origin.slice(8);
-
-        const res = await fetch(proxiedUrl, { 
-            method: 'HEAD', // HEAD is faster for checking connectivity
-            signal: AbortSignal.timeout(6000) 
-        });
-        
+        const proxiedUrl = url.replace(curl.origin, i) + '&host=' + curl.origin.slice(8);
+        const res = await fetch(proxiedUrl, { method: 'HEAD' });
         return res.status === 200;
     } catch {
         return false;
@@ -48,47 +45,44 @@ async function loadTest(i: string, url: string | null): Promise<boolean> {
 }
 
 export default async function() {
-    console.log('Initiating Invidious load test (3-way split)...');
+    console.log('Initiating Invidious Multi-Stage Test (No Timeout)...');
 
     const fileContent = await readFile('./invidious.json', 'utf8');
     const instances: string[] = JSON.parse(fileContent);
 
     const splitInThree = (arr: string[]) => {
-        const first = Math.ceil(arr.length / 3);
-        const second = Math.ceil((arr.length - first) / 2) + first;
-        return [
-            arr.slice(0, first),
-            arr.slice(first, second),
-            arr.slice(second)
-        ];
+        const s1 = Math.ceil(arr.length / 3);
+        const s2 = Math.ceil((arr.length - s1) / 2) + s1;
+        return [arr.slice(0, s1), arr.slice(s1, s2), arr.slice(s2)];
     };
 
     const chunks = splitInThree(instances);
-    
-    // Process chunks to find valid audio URLs
-    const audioResults = (await Promise.all(
-        chunks.map(chunk => Promise.all(chunk.map(getAudioUrl)))
-    )).flat();
 
-    // Filter to instances that returned a URL, then run load test
-    const validInstances = await Promise.all(
-        audioResults
-            .filter(([_, url]) => url !== null)
-            .map(async ([inst, url]) => {
-                const passed = await loadTest(inst, url);
-                return passed ? inst : null;
-            })
+    // Initial pass: Gather the Alive List
+    const aliveResults = await Promise.all(
+        chunks.map(chunk => Promise.all(chunk.map(async inst => (await isAlive(inst)) ? inst : null)))
     );
+    const aliveList = aliveResults.flat().filter((i): i is string => i !== null);
 
-    const finalFilteredList = validInstances.filter((inst): inst is string => inst !== null);
-
-    console.log(`Test complete. Found ${finalFilteredList.length} functional instances.`);
-    
-    // Safety check: If list is empty, return original to avoid wiping file and causing Git conflicts
-    if (finalFilteredList.length === 0) {
-        console.warn('Warning: No instances passed. Returning original list to prevent empty file.');
-        return instances;
+    if (aliveList.length === 0) {
+        console.error('Failure: Zero instances are alive.');
+        return []; // Return empty to indicate total failure
     }
 
-    return finalFilteredList;
+    // Secondary pass: Deep test only those that are alive
+    const deepTestResults = await Promise.all(aliveList.map(async inst => {
+        const [_, audioUrl] = await getAudioUrl(inst);
+        const passedProxy = await loadTest(inst, audioUrl);
+        return passedProxy ? inst : null;
+    }));
+
+    const functionalList = deepTestResults.filter((i): i is string => i !== null);
+
+    if (functionalList.length === 0) {
+        console.warn('No instances passed proxy tests. Returning basic alive list.');
+        return aliveList; // Minimum viable list
+    }
+
+    console.log(`Success: Found ${functionalList.length} functional instances.`);
+    return functionalList;
 }

@@ -1,16 +1,5 @@
 [
     [
-        "https://invidious.darkness.services",
-        "https://invidious.f5.si",
-        "https://yt.omada.cafe",
-        "https://invidious.reallyaweso.me",
-        "https://invidious.tiekoetter.com",
-        "https://invidious.materialio.us",
-        "https://invidious.nerdvpn.de",
-        "https://inv.nadeko.net",
-        "https://y.com.sb"
-    ],
-    [
         "https://invidious.f5.si",
         "https://echostreamz.com"
     ],
@@ -65,5 +54,9 @@
         "https://invidious.darkness.services",
         "https://echostreamz.com",
         "https://yt.omada.cafe"
+    ],
+    [
+        "https://invidious.f5.si",
+        "https://echostreamz.com"
     ]
 ]

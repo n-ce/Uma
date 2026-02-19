@@ -22,7 +22,7 @@ async function getFunctionalScore(instance: string): Promise<number> {
     try {
         const res = await fetch(`${instance}/api/v1/videos/GemKqzILV4w`);
         if (!res.ok) return 0;
-
+console.log('///// ',instance);
         const data = await res.json();
         const audioFormat = data?.adaptiveFormats?.find((f: any) => f.type?.startsWith('audio'));
         

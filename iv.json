@@ -1,8 +1,5 @@
 [
     [
-        "https://invidious.f5.si"
-    ],
-    [
         "https://invidious.f5.si",
         "https://echostreamz.com",
         "https://invidious.reallyaweso.me",
@@ -138,5 +135,9 @@
         "https://invidious.f5.si",
         "https://yt.omada.cafe",
         "https://echostreamz.com"
+    ],
+    [
+        "https://invidious.f5.si",
+        "https://yt.omada.cafe"
     ]
 ]

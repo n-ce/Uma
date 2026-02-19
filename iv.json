@@ -1,10 +1,6 @@
 [
     [
         "https://invidious.f5.si",
-        "https://echostreamz.com"
-    ],
-    [
-        "https://invidious.f5.si",
         "https://echostreamz.com",
         "https://yt.omada.cafe"
     ],
@@ -58,5 +54,11 @@
     [
         "https://invidious.f5.si",
         "https://echostreamz.com"
+    ],
+    [
+        "https://invidious.darkness.services",
+        "https://invidious.f5.si",
+        "https://echostreamz.com",
+        "https://yt.omada.cafe"
     ]
 ]

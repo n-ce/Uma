@@ -14,42 +14,37 @@ async function isAlive(instance: string): Promise<boolean> {
 }
 
 /**
- * Stage 2: Fetches audio stream URL.
+ * Stage 2: Audio URL and Proxy Verification.
+ * Returns a score: 2 (Proxy Pass), 1 (Metadata Pass), 0 (Alive only).
  */
-async function getAudioUrl(instance: string): Promise<[string, string | null]> {
+async function getFunctionalScore(instance: string): Promise<number> {
     try {
         const res = await fetch(`${instance}/api/v1/videos/GemKqzILV4w`);
-        if (!res.ok) return [instance, null];
-        
+        if (!res.ok) return 0;
+
         const data = await res.json();
         const audioFormat = data?.adaptiveFormats?.find((f: any) => f.type?.startsWith('audio'));
-        return [instance, audioFormat ? audioFormat.url : null];
-    } catch {
-        return [instance, null];
-    }
-}
+        
+        if (!audioFormat) return 0; // Metadata valid but no audio
 
-/**
- * Stage 3: Verifies proxy functionality.
- */
-async function loadTest(i: string, url: string | null): Promise<boolean> {
-    if (!url) return false;
-    try {
-        const curl = new URL(url);
-        const proxiedUrl = url.replace(curl.origin, i) + '&host=' + curl.origin.slice(8);
-        const res = await fetch(proxiedUrl, { method: 'HEAD' });
-        return res.status === 200;
+        // Load Test (Proxy check)
+        const curl = new URL(audioFormat.url);
+        const proxiedUrl = audioFormat.url.replace(curl.origin, instance) + '&host=' + curl.origin.slice(8);
+        const proxyRes = await fetch(proxiedUrl, { method: 'HEAD' });
+
+        return proxyRes.status === 200 ? 2 : 1;
     } catch {
-        return false;
+        return 0;
     }
 }
 
 export default async function() {
-    console.log('Initiating Invidious Multi-Stage Test (No Timeout)...');
+    console.log('Initiating Invidious Multi-Stage Test (Alive-Prioritized)...');
 
     const fileContent = await readFile('./invidious.json', 'utf8');
     const instances: string[] = JSON.parse(fileContent);
 
+    // Split into three chunks for the initial alive check
     const splitInThree = (arr: string[]) => {
         const s1 = Math.ceil(arr.length / 3);
         const s2 = Math.ceil((arr.length - s1) / 2) + s1;
@@ -58,31 +53,30 @@ export default async function() {
 
     const chunks = splitInThree(instances);
 
-    // Initial pass: Gather the Alive List
+    // 1. Filter for alive instances only
     const aliveResults = await Promise.all(
         chunks.map(chunk => Promise.all(chunk.map(async inst => (await isAlive(inst)) ? inst : null)))
     );
     const aliveList = aliveResults.flat().filter((i): i is string => i !== null);
 
-    if (aliveList.length === 0) {
-        console.error('Failure: Zero instances are alive.');
-        return []; // Return empty to indicate total failure
-    }
+    console.log(`Initial check: ${aliveList.length} instances alive.`);
 
-    // Secondary pass: Deep test only those that are alive
-    const deepTestResults = await Promise.all(aliveList.map(async inst => {
-        const [_, audioUrl] = await getAudioUrl(inst);
-        const passedProxy = await loadTest(inst, audioUrl);
-        return passedProxy ? inst : null;
-    }));
+    // 2. Score the alive instances for ordering
+    // This runs in parallel to ensure "at any cost" execution speed
+    const scoredList = await Promise.all(
+        aliveList.map(async (inst) => {
+            const score = await getFunctionalScore(inst);
+            return { inst, score };
+        })
+    );
 
-    const functionalList = deepTestResults.filter((i): i is string => i !== null);
+    // 3. Sort by score (2 > 1 > 0)
+    // Functional proxies first, then instances with metadata, then just alive ones.
+    const sortedFinalList = scoredList
+        .sort((a, b) => b.score - a.score)
+        .map(item => item.inst);
 
-    if (functionalList.length === 0) {
-        console.warn('No instances passed proxy tests. Returning basic alive list.');
-        return aliveList; // Minimum viable list
-    }
-
-    console.log(`Success: Found ${functionalList.length} functional instances.`);
-    return functionalList;
+    console.log(`Final list compiled with ${sortedFinalList.length} instances.`);
+    
+    return sortedFinalList;
 }

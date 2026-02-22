@@ -26,12 +26,6 @@
     [
         "https://invidious.darkness.services",
         "https://echostreamz.com",
-        "https://yt.omada.cafe",
-        "https://inv-veltrix.zeabur.app"
-    ],
-    [
-        "https://invidious.darkness.services",
-        "https://echostreamz.com",
         "https://yt.omada.cafe"
     ],
     [
@@ -59,6 +53,10 @@
     ],
     [
         "https://invidious.darkness.services",
+        "https://echostreamz.com",
+        "https://yt.omada.cafe"
+    ],
+    [
         "https://echostreamz.com",
         "https://yt.omada.cafe"
     ]
